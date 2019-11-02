@@ -7,21 +7,21 @@
                 "value": "Rindsgulasch"
             }],
         "author": "Max Mustermann",
-        "date": "2013-10-14",
+        "date": "2019-10-14",
         "location": "Basel Schweiz",
-        "servings": 140,
+        "servings": 13,
         "instructions": [
                 {
                     "language": "de",
-                    "value": "Den Karottenkuchen im Ofen backen und noch warm geniessen."
+                    "value": "Rezept zum Ausprobieren."
                 },
                 {
                     "language": "en",
-                    "value": "Bake the carrot cake in the oven and enjoy while still hot."
+                    "value": "Recipe to try."
                 }],
         "ingredients": [
-            {
-            "id": "100100191",
+        {
+            "id": "1027",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -30,30 +30,264 @@
                 }],
             "amount": 150,
             "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
             "origin": "spain",
             "transport": "air",
             "production": "greenhouse",
             "processing": "raw",
             "conservation": "fresh",
             "packaging": "plastic"
-            },
-            {
-            "id": "100100894",
+        },
+                 {
+            "id": "6",
             "type": "conceptual-ingredients",
             "names":  [
                 {
                     "language": "de",
-                    "value": "Zwiebeln"
+                    "value": "Rind"
+                },
+                {
+                    "language": "en",
+                    "value": "beef"
                 }],
-            "amount": 78,
+            "amount": 80,
             "unit": "gram",
-            "origin": "france",
+            "price": 5.1,
+            "currency": "CHF",
+            "origin": "switzerland",
             "transport": "ground",
-            "production": "organic",
-            "processing": "",
-            "conservation": "dried",
-            "packaging": ""
-            }
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+	   {
+            "id": "368",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Zwiebel"
+                },
+                {
+                    "language": "en",
+                    "value": "Onion"
+                }],
+            "amount": 10,
+            "unit": "gram",
+            "price": 0.9,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "ground",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+		{
+            "id": "359",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Peperoni yellow"
+                }],
+            "amount": 40,
+            "unit": "gram",
+            "price": 1.5,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+        {
+            "id": "358",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "en",
+                    "value": "Leek"
+                },
+                {
+                    "language": "de",
+                    "value": "Lauch"
+                }],
+            "amount": 5,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "marocco",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+        {
+            "id": "1672",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Rinderfond"
+                },
+                {
+                    "language": "en",
+                    "value": "Beef Stock"
+                }],
+            "amount": 5,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "ground",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+        {
+            "id": "591",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "en",
+                    "value": "Olive Oil"
+                },
+                {
+                    "language": "de",
+                    "value": "Olivenöl"
+                }],
+            "amount": 4.5,
+            "unit": "gram",
+            "price": 0.05,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "ground",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+        {
+            "id": "1693",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Essig"
+                },
+                {
+                    "language": "de",
+                    "value": "Vinegar"
+                }],
+            "amount": 3,
+            "unit": "gram",
+            "price": 0.05,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "ground",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+        {
+            "id": "663",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "en",
+                    "value": "Rose Paprika"
+                },
+                {
+                    "language": "de",
+                    "value": "Rosenpaprika"
+                }],
+            "amount": 2,
+            "unit": "gram",
+            "price": 0.05,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+        {
+            "id": "664",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "en",
+                    "value": "Balsamico"
+                },
+                {
+                    "language": "de",
+                    "value": "Balsamico-Essig"
+                }],
+            "amount": 3,
+            "unit": "gram",
+            "price": 0.05,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+        {
+            "id": "100100193",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "en",
+                    "value": "Salt"
+                },
+                {
+                    "language": "de",
+                    "value": "Salz"
+                }],
+            "amount": 4,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "ground",
+            "production": "standard",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+        {
+            "id": "463",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "en",
+                    "value": "Pepper"
+                },
+                {
+                    "language": "de",
+                    "value": "Pfeffer"
+                }],
+            "amount": 2,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }
         ]
     }
 }

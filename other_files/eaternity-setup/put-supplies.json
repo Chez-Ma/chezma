@@ -31,10 +31,14 @@
                 {
                     "language": "de",
                     "value": "Rind"
+                },
+                {
+                    "language": "en",
+                    "value": "beef"
                 }],
-            "amount": 150,
+            "amount": 80,
             "unit": "gram",
-            "price": 0.5,
+            "price": 5.1,
             "currency": "CHF",
             "origin": "switzerland",
             "transport": "ground",
@@ -49,11 +53,15 @@
             "names":  [
                 {
                     "language": "de",
+                    "value": "Zwiebel"
+                },
+                {
+                    "language": "en",
                     "value": "Onion"
                 }],
-            "amount": 150,
+            "amount": 10,
             "unit": "gram",
-            "price": 0.5,
+            "price": 0.9,
             "currency": "CHF",
             "origin": "switzerland",
             "transport": "ground",
@@ -70,9 +78,9 @@
                     "language": "de",
                     "value": "Peperoni yellow"
                 }],
-            "amount": 150,
+            "amount": 40,
             "unit": "gram",
-            "price": 0.5,
+            "price": 1.5,
             "currency": "CHF",
             "origin": "spain",
             "transport": "air",
@@ -86,10 +94,14 @@
             "type": "conceptual-ingredients",
             "names":  [
                 {
-                    "language": "de",
+                    "language": "en",
                     "value": "Leek"
+                },
+                {
+                    "language": "de",
+                    "value": "Lauch"
                 }],
-            "amount": 150,
+            "amount": 5,
             "unit": "gram",
             "price": 0.5,
             "currency": "CHF",
@@ -106,9 +118,13 @@
             "names":  [
                 {
                     "language": "de",
+                    "value": "Rinderfond"
+                },
+                {
+                    "language": "en",
                     "value": "Beef Stock"
                 }],
-            "amount": 150,
+            "amount": 5,
             "unit": "gram",
             "price": 0.5,
             "currency": "CHF",
@@ -124,12 +140,16 @@
             "type": "conceptual-ingredients",
             "names":  [
                 {
-                    "language": "de",
+                    "language": "en",
                     "value": "Olive Oil"
+                },
+                {
+                    "language": "de",
+                    "value": "Olivenöl"
                 }],
-            "amount": 150,
+            "amount": 4.5,
             "unit": "gram",
-            "price": 0.5,
+            "price": 0.05,
             "currency": "CHF",
             "origin": "spain",
             "transport": "ground",
@@ -144,11 +164,15 @@
             "names":  [
                 {
                     "language": "de",
+                    "value": "Essig"
+                },
+                {
+                    "language": "de",
                     "value": "Vinegar"
                 }],
-            "amount": 150,
+            "amount": 3,
             "unit": "gram",
-            "price": 0.5,
+            "price": 0.05,
             "currency": "CHF",
             "origin": "switzerland",
             "transport": "ground",
@@ -162,12 +186,39 @@
             "type": "conceptual-ingredients",
             "names":  [
                 {
-                    "language": "de",
+                    "language": "en",
                     "value": "Rose Paprika"
+                },
+                {
+                    "language": "de",
+                    "value": "Rosenpaprika"
                 }],
-            "amount": 150,
+            "amount": 2,
             "unit": "gram",
-            "price": 0.5,
+            "price": 0.05,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+        {
+            "id": "664",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "en",
+                    "value": "Balsamico"
+                },
+                {
+                    "language": "de",
+                    "value": "Balsamico-Essig"
+                }],
+            "amount": 3,
+            "unit": "gram",
+            "price": 0.05,
             "currency": "CHF",
             "origin": "spain",
             "transport": "air",
@@ -181,10 +232,14 @@
             "type": "conceptual-ingredients",
             "names":  [
                 {
-                    "language": "de",
+                    "language": "en",
                     "value": "Salt"
+                },
+                {
+                    "language": "de",
+                    "value": "Salz"
                 }],
-            "amount": 150,
+            "amount": 4,
             "unit": "gram",
             "price": 0.5,
             "currency": "CHF",
@@ -200,10 +255,14 @@
             "type": "conceptual-ingredients",
             "names":  [
                 {
-                    "language": "de",
+                    "language": "en",
                     "value": "Pepper"
+                },
+                {
+                    "language": "de",
+                    "value": "Pfeffer"
                 }],
-            "amount": 150,
+            "amount": 2,
             "unit": "gram",
             "price": 0.5,
             "currency": "CHF",
