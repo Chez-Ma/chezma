@@ -6,20 +6,19 @@ import Checkbox from "@material-ui/core/Checkbox";
 import connect from "react-redux/es/connect/connect";
 import {selectRecipe, unselectRecipe} from "../actions/selectRecipe";
 
+function mapStateToProps(state, otherProps) {
+  return {
+    selected: state.selectedRecipes.indexOf(otherProps.recipe.id) >= 0
+  }
+}
+
 class RecipeListItem extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      selected: false
-    };
   }
 
   handleToggle = () => {
-    this.setState({
-      selected: !this.state.selected
-    });
-    if(this.state.selected){
+    if(this.props.selected){
       this.props.dispatch(unselectRecipe(this.props.recipe.id))
     }
     else {
@@ -35,7 +34,7 @@ class RecipeListItem extends Component {
           <Checkbox
             edge="end"
             onChange={this.handleToggle}
-            checked={this.state.select}
+            checked={this.props.selected}
           />
         </ListItemSecondaryAction>
       </ListItem>
@@ -43,4 +42,4 @@ class RecipeListItem extends Component {
   }
 }
 
-export default connect()(RecipeListItem);
+export default connect(mapStateToProps)(RecipeListItem);

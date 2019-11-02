@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './RecipeSummary.css'
 import connect from "react-redux/es/connect/connect";
+import Box from "@material-ui/core/Box";
 
 
 function mapStateToProps(state) {
@@ -38,6 +39,7 @@ class RecipeSummary extends Component {
     render() {
         return (
             this.props.recipes.map((recipe, i) => (
+              <Box m={2}>
                 <Card key={i}>
                     <CardHeader
                         avatar={
@@ -64,6 +66,7 @@ class RecipeSummary extends Component {
                         </CardContent>
                     </Collapse>
                 </Card>
+              </Box>
             ))
         );
     }
