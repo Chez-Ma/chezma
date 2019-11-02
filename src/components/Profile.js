@@ -11,6 +11,9 @@ import Checkbox from "@material-ui/core/Checkbox";
 import FormLabel from "@material-ui/core/FormLabel";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import CenteredLayout from "./CenteredLayout";
+import {setProfileState} from "../actions/profile";
+import Typography from "@material-ui/core/Typography";
+import Toolbar from "@material-ui/core/Toolbar";
 
 const genders = [
     {
@@ -45,47 +48,39 @@ const preferences = [
     }
 ];
 
-function mapStateToProps(_) {
-    return {};
+function mapStateToProps(state) {
+    return {
+        profile: state.profile
+    };
 }
 
 class Profile extends Component {
-    constructor(props) {
-        super(props);
-
-        let reducer = (previousValue, currentValue) => {
-            previousValue[currentValue.value] = false;
-            return previousValue
-        };
-
-        let pref = preferences.reduce(reducer, {gender: 'M'});
-        this.state  = allergies.reduce(reducer, pref);
-    }
-
     handleChangedGender = event => {
-        this.setState({gender: event.target.value});
+        this.props.dispatch(setProfileState('gender', event.target.value));
     };
 
     handleChangedAge = event => {
-        this.setState({age: event.target.value});
+        this.props.dispatch(setProfileState('age', event.target.value));
     };
 
     handleChangedSize = event => {
-        this.setState({size: event.target.value});
+        this.props.dispatch(setProfileState('size', event.target.value));
     };
 
     handleChangedWeight = event => {
-        this.setState({weight: event.target.value});
+        this.props.dispatch(setProfileState('weight', event.target.value));
     };
 
-    handleChangeCheckbox = name => _ => {
-        this.setState({[name]: !this.state[name]});
+    handleChangeCheckbox = name => () => {
+        this.props.dispatch(setProfileState(name, !this.props.profile[name]));
     };
 
     render() {
         return (
             <CenteredLayout>
-                <InputLabel htmlFor="outlined-number">Profile</InputLabel>
+                <Typography className="header-title" variant="h6">
+                    Profile
+                </Typography>
                 <FormControl>
                     <TextField
                         id="outlined-number"
@@ -104,7 +99,7 @@ class Profile extends Component {
                         id="outlined-select-currency-native"
                         select
                         label="Gender"
-                        value={this.state.gender}
+                        value={this.props.profile.gender}
                         onChange={this.handleChangedGender}
                         SelectProps={{
                             native: true,
@@ -154,7 +149,7 @@ class Profile extends Component {
                         {preferences.map((preference, i) => (
                             <FormControlLabel key={i}
                                 control={
-                                    <Checkbox checked={this.state[preference.value]}
+                                    <Checkbox checked={this.props.profile[preference.value]}
                                               onChange={this.handleChangeCheckbox(preference.value)}/>}
                                 label={preference.label}
                             />
@@ -166,7 +161,7 @@ class Profile extends Component {
                         {allergies.map((allergy, i) => (
                             <FormControlLabel key={i}
                                 control={
-                                    <Checkbox checked={this.state[allergy.value]}
+                                    <Checkbox checked={this.props.profile[allergy.value]}
                                               onChange={this.handleChangeCheckbox(allergy.value)}/>}
                                 label={allergy.label}
                             />
