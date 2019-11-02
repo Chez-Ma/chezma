@@ -2,30 +2,13 @@ import React, {Component} from 'react';
 import withStyles from "@material-ui/core/styles/withStyles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
+import connect from "react-redux/es/connect/connect";
 
-const exampleMenue = [
-    {
-        name: "Rindsfleisch Menü",
-        value: "rindfleischMenue",
-        img: "/images/Menü%201.jpg",
-        imgAlt: "",
-        ingredients: [12345, 4325456, 23423423]
-    },
-    {
-        name: "Spätzle",
-        value: "spaetzle",
-        img: "/images/Menü%202.jpg",
-        imgAlt: "",
-        ingredients: [12345, 4325456, 23423423]
-    },
-    {
-        name: "Kein Gulasch",
-        value: "menue2",
-        img: "/images/Menü%203.jpg",
-        imgAlt: "",
-        ingredients: [12345, 456456]
-    }];
-
+function mapStateToProps(state) {
+    return {
+        menus: state.menus,
+    }
+}
 
 class MenueSelection extends Component {
     constructor(props) {
@@ -35,14 +18,14 @@ class MenueSelection extends Component {
             previousValue[currentValue.value] = false;
             return previousValue
         };
-        this.state = exampleMenue.reduce(reducer, {});
+        this.state = this.props.menus.reduce(reducer, {});
     }
 
     render() {
         const {classes} = this.props;
         return (
             <div className={classes.root}>
-                {exampleMenue.map(menu => (
+                {this.props.menus.map(menu => (
                     <span
                         style={{
                             width: "30%",
@@ -160,4 +143,4 @@ const styles = theme => ({
     },
 });
 
-export default withStyles(styles)(MenueSelection);
+export default withStyles(styles)(connect(mapStateToProps)(MenueSelection));

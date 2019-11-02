@@ -1,17 +1,24 @@
 const exampleMenue = [
   {
-    name: "Rindfleisch Menü",
+    name: "Rindsfleisch Menü",
     value: "rindfleischMenue",
-    img: "",
+    img: "/images/Menü%201.jpg",
     imgAlt: "",
-    ingredients: [12345, 4325456, 23423423]
+    recipes: [12345, 4325456, 23423423]
   },
   {
-    name: "A menue 2",
-    value: "menue2",
-    img: "",
+    name: "Spätzle",
+    value: "spaetzle",
+    img: "/images/Menü%202.jpg",
     imgAlt: "",
-    ingredients: [12345, 456456]
+    recipes: [12345, 4325456, 23423423]
+  },
+  {
+    name: "Kein Gulasch",
+    value: "menue2",
+    img: "/images/Menü%203.jpg",
+    imgAlt: "",
+    recipes: [12345, 456456]
   }];
 
 export default function(state = exampleMenue, action) {
