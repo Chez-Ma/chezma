@@ -4,11 +4,11 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import Checkbox from "@material-ui/core/Checkbox";
 
-class IngredientListItem extends Component {
+class RecipeListItem extends Component {
   render() {
     return (
       <ListItem>
-        <ListItemText primary={this.props.ingredient.name} />
+        <ListItemText primary={this.props.recipe.name} />
         <ListItemSecondaryAction>
           <Checkbox
             /*edge="end"
@@ -22,4 +22,4 @@ class IngredientListItem extends Component {
   }
 }
 
-export default IngredientListItem;
+export default RecipeListItem;

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import IngredientListItem from "./IngredientListItem";
+import RecipeListItem from "./RecipeListItem";
 import IconButton from "@material-ui/core/IconButton";
 import {ExpandMore} from "@material-ui/icons";
 import Collapse from "@material-ui/core/Collapse";
@@ -11,7 +11,7 @@ import { StylesProvider } from '@material-ui/core/styles';
 import List from "@material-ui/core/List";
 
 
-class IngredientList extends Component {
+class RecipeList extends Component {
   constructor(props) {
     super(props);
 
@@ -24,17 +24,17 @@ class IngredientList extends Component {
     this.setState({
       expanded: !this.state.expanded
     })
-  }
+  };
 
   render() {
-    const ingredientListItems = this.props.ingredientList.ingredients.map((ingredient) => {
-      return <IngredientListItem ingredient={ingredient}/>
+    const recipeListItems = this.props.recipeList.recipes.map((recipe) => {
+      return <RecipeListItem recipe={recipe}/>
     });
 
     return (
       <Card>
         <CardActions disableSpacing>
-          <div>{this.props.ingredientList.name}</div>
+          <div>{this.props.recipeList.name}</div>
           <StylesProvider injectFirst>
             <IconButton
               onClick={this.handleExpandClick}
@@ -48,7 +48,7 @@ class IngredientList extends Component {
         <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
           <CardContent>
             <List>
-              {ingredientListItems}
+              {recipeListItems}
             </List>
           </CardContent>
         </Collapse>
@@ -57,4 +57,4 @@ class IngredientList extends Component {
   }
 }
 
-export default IngredientList;
+export default RecipeList;

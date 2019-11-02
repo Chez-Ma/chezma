@@ -1,31 +1,27 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Grid from "@material-ui/core/Grid";
-import IngredientList from "./IngredientList";
+import RecipeList from "./RecipeList";
 import Box from "@material-ui/core/Box";
 import MenueSelection from "./MenueSelection";
 
-const dummyData = [{
-  name: "Fleisch",
-  ingredients: [
-    {name: "Rindsgulasch"},
-    {name: "Gordon-Bleu"}],
-},{
-  name: "Gemüse",
-  ingredients: [{name: "Grüner Salat"}]
-}]
-
 function mapStateToProps(state) {
-  return {};
+  return {
+    recipeGroups: state.recipeGroups.map(group => ({
+      name: group.name,
+      recipes: group.recipes.map(id => ({
+        name: state.recipes[id].name,
+        id: id
+      }))
+    }))
+  };
 }
 
 class Home extends Component {
-
-
   render() {
-    const ingredientLists = dummyData.map((ingredientList) => (
+    const recipeLists = this.props.recipeGroups.map((group) => (
       <Box mb={2}>
-        <IngredientList ingredientList={ingredientList} />
+        <RecipeList recipeList={group} />
       </Box>
     ));
 
@@ -33,12 +29,12 @@ class Home extends Component {
       <Grid container spacing={2}>
         <Grid item xs={6}>
           <Box m={2}>
-            {ingredientLists}
+            {recipeLists}
           </Box>
         </Grid>
         <Grid item xs={6}>
           <Box m={2}>
-              <MenueSelection/>
+            <MenueSelection/>
           </Box>
         </Grid>
       </Grid>
