@@ -1,0 +1,59 @@
+// https://test.eaternity.ch/api/kitchens/ChezMa/recipes/Rindsgulasch
+{
+    "recipe": {
+        "titles": [
+            {
+                "language": "de",
+                "value": "Rindsgulasch"
+            }],
+        "author": "Max Mustermann",
+        "date": "2013-10-14",
+        "location": "Basel Schweiz",
+        "servings": 140,
+        "instructions": [
+                {
+                    "language": "de",
+                    "value": "Den Karottenkuchen im Ofen backen und noch warm geniessen."
+                },
+                {
+                    "language": "en",
+                    "value": "Bake the carrot cake in the oven and enjoy while still hot."
+                }],
+        "ingredients": [
+            {
+            "id": "100100191",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Tomaten"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "origin": "spain",
+            "transport": "air",
+            "production": "greenhouse",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+            },
+            {
+            "id": "100100894",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Zwiebeln"
+                }],
+            "amount": 78,
+            "unit": "gram",
+            "origin": "france",
+            "transport": "ground",
+            "production": "organic",
+            "processing": "",
+            "conservation": "dried",
+            "packaging": ""
+            }
+        ]
+    }
+}

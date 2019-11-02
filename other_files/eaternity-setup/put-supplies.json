@@ -1,0 +1,29 @@
+// https://test.eaternity.ch/api/kitchens/ChezMa/supplies/ChezMaSupply?indicators=true
+{
+ "supply": {
+        "supplier": "ChezMaSupplier",
+        "supplier-id": "el3i5y-2in5y-2hbllll02",
+        "supply-date": "2019-11-02",
+        "ingredients": [
+        {
+            "id": "100100191",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Tomaten"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "air",
+            "production": "greenhouse",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }
+        ]
+    }
+}

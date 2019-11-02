@@ -1,0 +1,9 @@
+// https://test.eaternity.ch/api/kitchens/ChezMa
+{
+   "kitchen": {
+        "name": "ChezMa",
+        "location": "Basel, switzerland",
+        "email": "test@example.com",
+        "language": "en"
+    }
+}
