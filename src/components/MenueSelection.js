@@ -30,7 +30,7 @@ class MenueSelection extends Component {
                 {Object.values(this.props.menus).map(menu => (
                     <span
                         style={{
-                            width: "30%",
+                            width: "48%",
                             padding: "0.2rem"
                         }}
                     >

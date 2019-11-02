@@ -5,6 +5,9 @@ import RecipeList from "./RecipeList";
 import Box from "@material-ui/core/Box";
 import MenueSelection from "./MenueSelection";
 import RecipeSummary from "./RecipeSummary";
+import Button from "@material-ui/core/Button";
+import {Link} from "react-router-dom";
+import {clearSelectedRecipes} from "../actions/selectRecipe";
 
 function mapStateToProps(state) {
   return {
@@ -32,6 +35,9 @@ class Home extends Component {
         <Grid item xs={6}>
           <Box m={2}>
             {recipeLists}
+            <Button variant="contained"
+                    disabled={this.props.selectedRecipes.length === 0}
+                    onClick={() => this.props.dispatch(clearSelectedRecipes())}>Clear Selection</Button>
           </Box>
         </Grid>
         <Grid item xs={6}>
@@ -39,7 +45,11 @@ class Home extends Component {
             {
               this.props.selectedRecipes.length === 0 ?
                 <MenueSelection/> :
-                <RecipeSummary/>
+                <div>
+                  <RecipeSummary/>
+                  <Button variant="contained" component={Link} to="/profile">Profile</Button>
+                  <Button variant="contained" style={{marginLeft: "1rem"}} component={Link} to="/order">Order</Button>
+                </div>
             }
           </Box>
         </Grid>
