@@ -6,6 +6,7 @@ import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Grid from "@material-ui/core/Grid";
 import Home from "./components/Home";
+import RecipeSummary from "./components/RecipeSummary";
 
 function App() {
   return (
@@ -16,9 +17,12 @@ function App() {
             <Route path="/login">
               <Login/>
             </Route>
-            <Route path="/register">
-              <Register/>
-            </Route>
+              <Route path="/register">
+                  <Register/>
+              </Route>
+              <Route path="/recipeSummary">
+                  <RecipeSummary/>
+              </Route>
             <Route path="/profile">
               <Profile/>
             </Route>
