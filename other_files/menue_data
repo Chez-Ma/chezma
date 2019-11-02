@@ -1,0 +1,57 @@
+
+const exampleMenue = [
+    {
+        name: "Rindfleisch Menü",
+        value: "rindfleischMenue",
+        img: "",
+        imgAlt: "",
+        ingredients: [12345, 4325456, 23423423]
+    },
+    {
+        name: "A menue 2",
+        value: "menue2",
+        img: "",
+        imgAlt: "",
+        ingredients: [12345, 456456]
+    }];
+
+const recipes = [
+    {
+        name: "Gulasch",
+        id: 12345,
+        ingredients: [
+            {id: 345, weight: 50},
+            {id: 567, weight: 100},
+            {id: 7689, weight: 100}
+        ]
+    },
+    {
+        name: "Potatos",
+        id: 456456,
+        ingredients: [
+            {id: 456456, weight: 200}
+        ]
+    }
+];
+
+const ingredients = [
+    {
+        name: "Rind",
+        value: "beef",
+        id: 345
+    },
+    {
+        name: "Paprika",
+        value: "paprika",
+        id: 567
+    },
+    {
+        name: "Sosse",
+        value: "sosse",
+        id: 7689
+    },
+    {
+        name: "Potatos",
+        value: "potatos",
+        id: 456456
+    }];
