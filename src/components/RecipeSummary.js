@@ -15,12 +15,14 @@ const exampleRecipe = [
         name: "Rindsgulasch",
         value: "rindsgulasch",
         img: "/images/Gulasch%201.jpg",
+        icon: "/images/meat_ikon.png",
         imgAlt: "a gulasch"
     },
     {
         name: "Brokkoli",
         value: "brokkoli",
         img: "/images/Brokkoli.jpg",
+        icon: "/images/broccoli_ikon.png",
         imgAlt: "a brokkoli"
     }];
 
@@ -42,9 +44,7 @@ class RecipeSummary extends Component {
                 <Card key={i}>
                     <CardHeader
                         avatar={
-                            <Avatar aria-label="recipe">
-                                R
-                            </Avatar>
+                            <Avatar aria-label="recipe" src={recipe.icon} />
                         }
                         title={recipe.name}
                     />
