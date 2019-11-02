@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Grid from "@material-ui/core/Grid";
 import Home from "./components/Home";
 import RecipeSummary from "./components/RecipeSummary";
+import MenueSelection from "./components/MenueSelection";
 
 function App() {
   return (
@@ -20,9 +21,12 @@ function App() {
               <Route path="/register">
                   <Register/>
               </Route>
-              <Route path="/recipeSummary">
-                  <RecipeSummary/>
-              </Route>
+            <Route path="/recipeSummary">
+              <RecipeSummary/>
+            </Route>
+            <Route path="/menueSelection">
+              <MenueSelection/>
+            </Route>
             <Route path="/profile">
               <Profile/>
             </Route>
