@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import Grid from "@material-ui/core/Grid";
 import IngredientList from "./IngredientList";
 import Box from "@material-ui/core/Box";
+import MenueSelection from "./MenueSelection";
 
 const dummyData = [{
   name: "Fleisch",
@@ -37,7 +38,7 @@ class Home extends Component {
         </Grid>
         <Grid item xs={6}>
           <Box m={2}>
-            Menu
+              <MenueSelection/>
           </Box>
         </Grid>
       </Grid>

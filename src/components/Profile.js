@@ -52,15 +52,14 @@ function mapStateToProps(_) {
 class Profile extends Component {
     constructor(props) {
         super(props);
-        this.state ={ gender: 'M'};
 
-        allergies.forEach((element) => {
-            this.state[element.value] = false;
-        });
+        let reducer = (previousValue, currentValue) => {
+            previousValue[currentValue.value] = false;
+            return previousValue
+        };
 
-        preferences.forEach((element) => {
-            this.state[element.value] = false;
-        });
+        let pref = preferences.reduce(reducer, {gender: 'M'});
+        this.state  = allergies.reduce(reducer, pref);
     }
 
     handleChangedGender = event => {
