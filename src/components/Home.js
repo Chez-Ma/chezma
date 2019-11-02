@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import RecipeList from "./RecipeList";
 import Box from "@material-ui/core/Box";
 import MenueSelection from "./MenueSelection";
+import RecipeSummary from "./RecipeSummary";
 
 function mapStateToProps(state) {
   return {
@@ -13,7 +14,8 @@ function mapStateToProps(state) {
         name: state.recipes[id].name,
         id: id
       }))
-    }))
+    })),
+    selectedRecipes: state.selectedRecipes
   };
 }
 
@@ -34,7 +36,11 @@ class Home extends Component {
         </Grid>
         <Grid item xs={6}>
           <Box m={2}>
-            <MenueSelection/>
+            {
+              this.props.selectedRecipes.length === 0 ?
+                <MenueSelection/> :
+                <RecipeSummary/>
+            }
           </Box>
         </Grid>
       </Grid>

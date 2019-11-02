@@ -1,6 +1,9 @@
 const recipes =  {
   1 : {
     name: "Gulasch",
+    img: "/images/Gulasch%201.jpg",
+    icon: "/images/meat_ikon.png",
+    imgAlt: "a gulasch",
     ingredients: [
       {id: 1076, weight: 80},
       {id: 368, weight: 10},
@@ -28,6 +31,9 @@ const recipes =  {
   },
   3: {
       name: "Brokkoli im Glas",
+      img: "/images/Brokkoli.jpg",
+      icon: "/images/broccoli_ikon.png",
+      imgAlt: "a brokkoli",
       ingredients: [
         {id: 1005, weight: 150},
         {id: 10457, weight: 2}

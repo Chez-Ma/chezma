@@ -9,30 +9,27 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './RecipeSummary.css'
+import connect from "react-redux/es/connect/connect";
 
-const exampleRecipe = [
-    {
-        name: "Rindsgulasch",
-        value: "rindsgulasch",
-        img: "/images/Gulasch%201.jpg",
-        icon: "/images/meat_ikon.png",
-        imgAlt: "a gulasch"
-    },
-    {
-        name: "Brokkoli",
-        value: "brokkoli",
-        img: "/images/Brokkoli.jpg",
-        icon: "/images/broccoli_ikon.png",
-        imgAlt: "a brokkoli"
-    }];
+
+function mapStateToProps(state) {
+  return {
+    recipes: state.selectedRecipes.map((id) => {
+      return state.recipes[id];
+    })
+  };
+}
 
 class RecipeSummary extends Component {
 
     constructor(props) {
         super(props);
 
-        let reducer = (previousValue, currentValue) => {previousValue[currentValue.value] = false; return previousValue};
-        this.state =  exampleRecipe.reduce(reducer, {});
+        let reducer = (previousValue, currentValue) => {
+          previousValue[currentValue.value] = false;
+          return previousValue
+        };
+        this.state = this.props.recipes.reduce(reducer, {});
     }
 
     handleExpandedChanged = name => _ => {
@@ -40,7 +37,7 @@ class RecipeSummary extends Component {
     };
     render() {
         return (
-                exampleRecipe.map((recipe, i) => (
+            this.props.recipes.map((recipe, i) => (
                 <Card key={i}>
                     <CardHeader
                         avatar={
@@ -72,4 +69,4 @@ class RecipeSummary extends Component {
     }
 }
 
-export default RecipeSummary;
+export default connect(mapStateToProps)(RecipeSummary);

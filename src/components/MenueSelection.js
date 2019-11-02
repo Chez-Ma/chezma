@@ -30,7 +30,7 @@ class MenueSelection extends Component {
                     <span
                         style={{
                             width: "30%",
-                            margin: "0.2rem"
+                            padding: "0.2rem"
                         }}
                     >
                     <ButtonBase
