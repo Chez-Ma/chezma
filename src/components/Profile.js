@@ -5,6 +5,11 @@ import './Profile.css'
 import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
+import FormGroup from "@material-ui/core/FormGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Checkbox from "@material-ui/core/Checkbox";
+import FormLabel from "@material-ui/core/FormLabel";
+import InputAdornment from "@material-ui/core/InputAdornment";
 
 const genders = [
     {
@@ -17,8 +22,26 @@ const genders = [
     },
 ];
 
-const checkboxes = [
+const allergies = [
+    {
+        value: 'Nut',
+        label: 'Nut allergy'
+    },
+    {
+        value: 'Glut',
+        label: 'Gluten allergy'
+    },
+]
 
+const preferences = [
+    {
+        value: 'Vt',
+        label: 'Vegetarian'
+    },
+    {
+        value: 'Vn',
+        label: 'Vegan',
+    }
 ]
 
 function mapStateToProps(state) {
@@ -28,30 +51,51 @@ function mapStateToProps(state) {
 class Profile extends Component {
     constructor(props) {
         super(props);
-        this.state ={gender: 'M'};
-    }
+        this.state ={ gender: 'M'};
 
-    setGender = value => {
-        this.setState({gender: value});
+        allergies.forEach((element) => {
+            this.state[element.value] = false;
+        });
+
+        preferences.forEach((element) => {
+            this.state[element.value] = false;
+        });
     }
 
     handleChangedGender = event => {
-        this.setGender(event.target.value);
+        this.setState({gender: event.target.value});
+    };
+
+    handleChangedAge = event => {
+        this.setState({age: event.target.value});
+    };
+
+    handleChangedSize = event => {
+        this.setState({size: event.target.value});
+    };
+
+    handleChangedWeight = event => {
+        this.setState({weight: event.target.value});
+    };
+
+    handleChangeCheckbox = name => e => {
+        this.setState({[name]: !this.state[name]});
     };
 
     render() {
         return (
             <React.Fragment>
+                <InputLabel htmlFor="outlined-number">Profile</InputLabel>
                 <FormControl>
-                    <InputLabel htmlFor="outlined-number">Profile</InputLabel>
-                    <br/>
-                    <br/>
                     <TextField
                         id="outlined-number"
                         label="Age"
-                        type="number"
+                        onChange={this.handleChangedAge}
                         InputLabelProps={{
                             shrink: true,
+                        }}
+                        InputProps={{
+                            startAdornment: <InputAdornment position="start">Years</InputAdornment>,
                         }}
                         margin="normal"
                         variant="outlined"
@@ -80,8 +124,12 @@ class Profile extends Component {
                         id="outlined-number"
                         label="Size"
                         type="number"
+                        onChange={this.handleChangedSize}
                         InputLabelProps={{
                             shrink: true,
+                        }}
+                        InputProps={{
+                            startAdornment: <InputAdornment position="start">cm</InputAdornment>,
                         }}
                         margin="normal"
                         variant="outlined"
@@ -90,12 +138,41 @@ class Profile extends Component {
                         id="outlined-number"
                         label="Weight"
                         type="number"
+                        onChange={this.handleChangedWeight}
                         InputLabelProps={{
                             shrink: true,
+                        }}
+                        InputProps={{
+                            startAdornment: <InputAdornment position="start">kg</InputAdornment>,
                         }}
                         margin="normal"
                         variant="outlined"
                     />
+
+                    <FormLabel component="legend">Preferences</FormLabel>
+                    <FormGroup>
+                        {preferences.map((preference, i) => (
+                            <FormControlLabel key={i}
+                                control={
+                                    <Checkbox checked={this.state[preference.value]}
+                                              onChange={this.handleChangeCheckbox(preference.value)}/>}
+                                label={preference.label}
+                            />
+                        ))}
+                    </FormGroup>
+
+                    <FormLabel component="legend">Allergies</FormLabel>
+                    <FormGroup>
+                        {allergies.map((allergy, i) => (
+                            <FormControlLabel key={i}
+                                control={
+                                    <Checkbox checked={this.state[allergy.value]}
+                                              onChange={this.handleChangeCheckbox(allergy.value)}/>}
+                                label={allergy.label}
+                            />
+                        ))}
+                    </FormGroup>
+
                     <FormHelperText id="my-helper-text">We'll never share your personal information</FormHelperText>
                 </FormControl>
             </React.Fragment>
