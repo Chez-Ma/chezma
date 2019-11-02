@@ -2,7 +2,7 @@
 {
  "supply": {
         "supplier": "ChezMaSupplier",
-        "supplier-id": "el3i5y-2in5y-2hbllll02",
+        "supplier-id": "ChezMaSupplyId",
         "supply-date": "2019-11-02",
         "ingredients": [
         {
@@ -37,14 +37,13 @@
             "price": 0.5,
             "currency": "CHF",
             "origin": "switzerland",
-            "transport": "truck",
+            "transport": "ground",
             "production": "farm",
             "processing": "raw",
             "conservation": "fresh",
             "packaging": "plastic"
         },
-, 
-                                   {
+	   {
             "id": "368",
             "type": "conceptual-ingredients",
             "names":  [
@@ -57,13 +56,13 @@
             "price": 0.5,
             "currency": "CHF",
             "origin": "switzerland",
-            "transport": "truck",
+            "transport": "ground",
             "production": "farm",
             "processing": "raw",
             "conservation": "fresh",
             "packaging": "plastic"
         }, 
-                                            {
+		{
             "id": "359",
             "type": "conceptual-ingredients",
             "names":  [
@@ -82,7 +81,7 @@
             "conservation": "fresh",
             "packaging": "plastic"
         }, 
-                                                     {
+        {
             "id": "358",
             "type": "conceptual-ingredients",
             "names":  [
@@ -101,7 +100,7 @@
             "conservation": "fresh",
             "packaging": "plastic"
         }, 
-                                                              {
+        {
             "id": "1672",
             "type": "conceptual-ingredients",
             "names":  [
@@ -114,14 +113,13 @@
             "price": 0.5,
             "currency": "CHF",
             "origin": "switzerland",
-            "transport": "truck",
+            "transport": "ground",
             "production": "farm",
             "processing": "raw",
             "conservation": "fresh",
             "packaging": "plastic"
         }, 
-, 
-                                                                                {
+        {
             "id": "591",
             "type": "conceptual-ingredients",
             "names":  [
@@ -134,13 +132,13 @@
             "price": 0.5,
             "currency": "CHF",
             "origin": "spain",
-            "transport": "truck",
+            "transport": "ground",
             "production": "farm",
             "processing": "raw",
             "conservation": "fresh",
             "packaging": "plastic"
         },
-                                                                                         {
+        {
             "id": "1693",
             "type": "conceptual-ingredients",
             "names":  [
@@ -153,13 +151,13 @@
             "price": 0.5,
             "currency": "CHF",
             "origin": "switzerland",
-            "transport": "truck",
+            "transport": "ground",
             "production": "farm",
             "processing": "raw",
             "conservation": "fresh",
             "packaging": "plastic"
         },
-                                                                                                  {
+        {
             "id": "663",
             "type": "conceptual-ingredients",
             "names":  [
@@ -178,7 +176,7 @@
             "conservation": "fresh",
             "packaging": "plastic"
         },
-                                                                                                           {
+        {
             "id": "100100193",
             "type": "conceptual-ingredients",
             "names":  [
@@ -191,13 +189,13 @@
             "price": 0.5,
             "currency": "CHF",
             "origin": "switzerland",
-            "transport": "truck",
-            "production": "Saline",
+            "transport": "ground",
+            "production": "standard",
             "processing": "raw",
             "conservation": "fresh",
             "packaging": "plastic"
         }, 
-                                                                                                                    {
+        {
             "id": "463",
             "type": "conceptual-ingredients",
             "names":  [
