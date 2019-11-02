@@ -31,7 +31,7 @@ const allergies = [
         value: 'Glut',
         label: 'Gluten allergy'
     },
-]
+];
 
 const preferences = [
     {
@@ -42,9 +42,9 @@ const preferences = [
         value: 'Vn',
         label: 'Vegan',
     }
-]
+];
 
-function mapStateToProps(state) {
+function mapStateToProps(_) {
     return {};
 }
 
@@ -78,7 +78,7 @@ class Profile extends Component {
         this.setState({weight: event.target.value});
     };
 
-    handleChangeCheckbox = name => e => {
+    handleChangeCheckbox = name => _ => {
         this.setState({[name]: !this.state[name]});
     };
 
