@@ -1,57 +1,55 @@
-
 const exampleMenue = [
     {
         name: "Rindfleisch Menü",
-        value: "rindfleischMenue",
+        value: "menue1",
         img: "",
         imgAlt: "",
-        ingredients: [12345, 4325456, 23423423]
+        ingredients: [01, 02, 03]
     },
     {
-        name: "A menue 2",
+        name: "Vegetarisch",
         value: "menue2",
         img: "",
         imgAlt: "",
-        ingredients: [12345, 456456]
+        ingredients: [02,03]
     }];
 
 const recipes = [
     {
         name: "Gulasch",
-        id: 12345,
+        id: 01,
         ingredients: [
-            {id: 345, weight: 50},
-            {id: 567, weight: 100},
-            {id: 7689, weight: 100}
+            {id: 1076, weight: 80},
+            {id: 368, weight: 10},
+            {id: 1017, weight: 40}
+{id: 1027, weight: 25}
+{id: 1015, weight: 5}
+{id: 668, weight: 5}
+{id: 591, weight: 4.5}
+{id: 1693, weight: 3}
+{id: 663, weight: 2}
+{id: 10457, weight: 4}
+{id: Pfeffer, weight: 2}
         ]
     },
     {
-        name: "Potatos",
-        id: 456456,
+        name: "Spätzli",
+        id: 02,
         ingredients: [
-            {id: 456456, weight: 200}
+            {id: 734, weight: 104}
+            {id: 423, weight: 26}
+            {id: 290, weight: 46.5}
+            {id: 62, weight: 39}
+            {id: 10457, weight: 2.6}
+            {id: muskat, weight: 1}
+
+name: "Brokkoli im Glas",
+        id: 03,
+        ingredients: [
+            {id: 1005, weight: 150}
+            {id: 10457, weight: 2}
+
         ]
     }
 ];
 
-const ingredients = [
-    {
-        name: "Rind",
-        value: "beef",
-        id: 345
-    },
-    {
-        name: "Paprika",
-        value: "paprika",
-        id: 567
-    },
-    {
-        name: "Sosse",
-        value: "sosse",
-        id: 7689
-    },
-    {
-        name: "Potatos",
-        value: "potatos",
-        id: 456456
-    }];
