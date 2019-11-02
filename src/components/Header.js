@@ -21,6 +21,7 @@ class Header extends Component {
               Chez Mà
             </Typography>
             <Button color="inherit" component={Link} to="/login">Login</Button>
+            <Button color="inherit" component={Link} to="/register">Register</Button>
           </Toolbar>
         </AppBar>
       </div>
