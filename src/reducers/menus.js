@@ -4,14 +4,14 @@ const exampleMenue = {
     value: "menue1",
     img: "/images/Menü%203.jpg",
     imgAlt: "",
-    ingredients: [1, 2, 3]
+    recipes: [1, 2, 3]
   },
   2: {
     name: "Vegetarisch",
     value: "menue2",
     img: "/images/Menü%202.jpg",
     imgAlt: "",
-    ingredients: [2,3]
+    recipes: [2,3]
   }
 };
 

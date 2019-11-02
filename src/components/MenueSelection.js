@@ -3,6 +3,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
 import connect from "react-redux/es/connect/connect";
+import {selectRecipe} from "../actions/selectRecipe";
 
 function mapStateToProps(state) {
     return {
@@ -41,6 +42,9 @@ class MenueSelection extends Component {
                         style={{
                             width: "100%",
                             padding: "1rem"
+                        }}
+                        onClick={() => {
+                            menu.recipes.forEach(id => this.props.dispatch(selectRecipe(id)))
                         }}
                     >
           <span
