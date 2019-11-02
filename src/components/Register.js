@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import CenteredLayout from "./CenteredLayout";
 
 const mail = 'test';
 const password = 'password';
@@ -9,7 +10,7 @@ const password = 'password';
 class Register extends Component {
     render() {
         return (
-            <div>
+            <CenteredLayout>
                 <form noValidate autoComplete='off'>
                     <div>
                         <TextField
@@ -37,7 +38,7 @@ class Register extends Component {
                         </Button>
                     </div>
                 </form>
-            </div>
+            </CenteredLayout>
         );
     }
 }

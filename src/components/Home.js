@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import Grid from "@material-ui/core/Grid";
 
 function mapStateToProps(state) {
   return {};
@@ -8,9 +9,14 @@ function mapStateToProps(state) {
 class Home extends Component {
   render() {
     return (
-      <div>
-        Home
-      </div>
+      <Grid container>
+        <Grid item xs={6}>
+          List
+        </Grid>
+        <Grid item xs={6}>
+          Menu
+        </Grid>
+      </Grid>
     );
   }
 }

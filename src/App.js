@@ -12,24 +12,20 @@ function App() {
     <Router>
       <div className="App">
         <Header/>
-        <Grid container direction="column" alignItems="center">
-          <Grid item xs={12}>
-            <Switch>
-              <Route path="/login">
-                <Login/>
-              </Route>
-              <Route path="/register">
-                <Register/>
-              </Route>
-              <Route path="/profile">
-                <Profile/>
-              </Route>
-              <Route path="/">
-                <Home/>
-              </Route>
-            </Switch>
-          </Grid>
-        </Grid>
+          <Switch>
+            <Route path="/login">
+              <Login/>
+            </Route>
+            <Route path="/register">
+              <Register/>
+            </Route>
+            <Route path="/profile">
+              <Profile/>
+            </Route>
+            <Route path="/">
+              <Home/>
+            </Route>
+          </Switch>
       </div>
     </Router>
   );

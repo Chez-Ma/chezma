@@ -10,6 +10,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormLabel from "@material-ui/core/FormLabel";
 import InputAdornment from "@material-ui/core/InputAdornment";
+import CenteredLayout from "./CenteredLayout";
 
 const genders = [
     {
@@ -84,7 +85,7 @@ class Profile extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <CenteredLayout>
                 <InputLabel htmlFor="outlined-number">Profile</InputLabel>
                 <FormControl>
                     <TextField
@@ -175,7 +176,7 @@ class Profile extends Component {
 
                     <FormHelperText id="my-helper-text">We'll never share your personal information</FormHelperText>
                 </FormControl>
-            </React.Fragment>
+            </CenteredLayout>
         );
     }
 }
