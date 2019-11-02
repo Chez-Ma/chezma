@@ -5,6 +5,7 @@ import Register from "./components/Register";
 import Profile from "./components/Profile";
 import Header from "./components/Header";
 import Grid from "@material-ui/core/Grid";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
                 <Profile/>
               </Route>
               <Route path="/">
-                Home
+                <Home/>
               </Route>
             </Switch>
           </Grid>
