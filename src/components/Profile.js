@@ -13,33 +13,33 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 
 const genders = [
     {
-        value: 'F',
+        value: 'female',
         label: 'Female',
     },
     {
-        value: 'M',
+        value: 'male',
         label: 'Male',
     },
 ];
 
 const allergies = [
     {
-        value: 'Nut',
+        value: 'nut',
         label: 'Nut allergy'
     },
     {
-        value: 'Glut',
+        value: 'gluten',
         label: 'Gluten allergy'
     },
 ];
 
 const preferences = [
     {
-        value: 'Vt',
+        value: 'vegetarian',
         label: 'Vegetarian'
     },
     {
-        value: 'Vn',
+        value: 'vegan',
         label: 'Vegan',
     }
 ];
