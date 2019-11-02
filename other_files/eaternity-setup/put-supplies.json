@@ -23,6 +23,234 @@
             "processing": "raw",
             "conservation": "fresh",
             "packaging": "plastic"
+        },
+                 {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Rind"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "truck",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+                          {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Rind"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "truck",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+                                   {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Onion"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "truck",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+                                            {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Peperoni yellow"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+                                                     {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Leek"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "marocco",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+                                                              {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Beef Stock"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "truck",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+                                                                       {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Beef Stock"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "truck",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+                                                                                {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Olive Oil"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "truck",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+                                                                                         {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Vinegar"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "truck",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+                                                                                                  {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Rose Paprika"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        },
+                                                                                                           {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Salt"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "truck",
+            "production": "Saline",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
+        }, 
+                                                                                                                    {
+            "id": "100100192",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Pepper"
+                }],
+            "amount": 150,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "switzerland",
+            "transport": "air",
+            "production": "farm",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
         }
         ]
     }
