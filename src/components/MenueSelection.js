@@ -18,14 +18,15 @@ class MenueSelection extends Component {
             previousValue[currentValue.value] = false;
             return previousValue
         };
-        this.state = this.props.menus.reduce(reducer, {});
+
+        this.state = Object.values(this.props.menus).reduce(reducer, {});
     }
 
     render() {
         const {classes} = this.props;
         return (
             <div className={classes.root}>
-                {this.props.menus.map(menu => (
+                {Object.values(this.props.menus).map(menu => (
                     <span
                         style={{
                             width: "30%",
