@@ -6,7 +6,7 @@
         "supply-date": "2019-11-02",
         "ingredients": [
         {
-            "id": "100100191",
+            "id": "1027",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -25,7 +25,7 @@
             "packaging": "plastic"
         },
                  {
-            "id": "100100192",
+            "id": "6",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -43,27 +43,9 @@
             "conservation": "fresh",
             "packaging": "plastic"
         },
-                          {
-            "id": "100100192",
-            "type": "conceptual-ingredients",
-            "names":  [
-                {
-                    "language": "de",
-                    "value": "Rind"
-                }],
-            "amount": 150,
-            "unit": "gram",
-            "price": 0.5,
-            "currency": "CHF",
-            "origin": "switzerland",
-            "transport": "truck",
-            "production": "farm",
-            "processing": "raw",
-            "conservation": "fresh",
-            "packaging": "plastic"
-        }, 
+, 
                                    {
-            "id": "100100192",
+            "id": "368",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -82,7 +64,7 @@
             "packaging": "plastic"
         }, 
                                             {
-            "id": "100100192",
+            "id": "359",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -101,7 +83,7 @@
             "packaging": "plastic"
         }, 
                                                      {
-            "id": "100100192",
+            "id": "358",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -120,7 +102,7 @@
             "packaging": "plastic"
         }, 
                                                               {
-            "id": "100100192",
+            "id": "1672",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -138,27 +120,9 @@
             "conservation": "fresh",
             "packaging": "plastic"
         }, 
-                                                                       {
-            "id": "100100192",
-            "type": "conceptual-ingredients",
-            "names":  [
-                {
-                    "language": "de",
-                    "value": "Beef Stock"
-                }],
-            "amount": 150,
-            "unit": "gram",
-            "price": 0.5,
-            "currency": "CHF",
-            "origin": "switzerland",
-            "transport": "truck",
-            "production": "farm",
-            "processing": "raw",
-            "conservation": "fresh",
-            "packaging": "plastic"
-        }, 
+, 
                                                                                 {
-            "id": "100100192",
+            "id": "591",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -177,7 +141,7 @@
             "packaging": "plastic"
         },
                                                                                          {
-            "id": "100100192",
+            "id": "1693",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -196,7 +160,7 @@
             "packaging": "plastic"
         },
                                                                                                   {
-            "id": "100100192",
+            "id": "663",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -215,7 +179,7 @@
             "packaging": "plastic"
         },
                                                                                                            {
-            "id": "100100192",
+            "id": "100100193",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -234,7 +198,7 @@
             "packaging": "plastic"
         }, 
                                                                                                                     {
-            "id": "100100192",
+            "id": "463",
             "type": "conceptual-ingredients",
             "names":  [
                 {
