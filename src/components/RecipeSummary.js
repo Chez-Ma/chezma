@@ -11,6 +11,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './RecipeSummary.css'
 import connect from "react-redux/es/connect/connect";
 import Box from "@material-ui/core/Box";
+import NutritionalValue from "./NutritionalValue";
 
 
 function mapStateToProps(state) {
@@ -61,8 +62,7 @@ class RecipeSummary extends Component {
                     </CardActions>
                     <Collapse in={this.state[recipe.name]} timeout="auto" unmountOnExit>
                         <CardContent>
-                            <Typography paragraph>Method:
-                            </Typography>
+                                <NutritionalValue />
                         </CardContent>
                     </Collapse>
                 </Card>
