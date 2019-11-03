@@ -168,6 +168,76 @@ vitamind: {
             ]
         }
     },
+fat: {
+        id: "fat",
+        name: "Fett",
+        ranges : {
+            range : [
+           
+             
+{
+                    fromAge: 1,
+                    toAge: 4,
+                    male: 30-40,
+                    female: 30-40
+                },
+                {
+                    fromAge: 4,
+                    toAge: 7,
+                    male: 30-35,
+                    female: 30-35
+                },
+                {
+                    fromAge: 7,
+                    toAge: 10,
+                    male: 30-35,
+                    female: 30-35
+                },
+                {
+                    fromAge: 10,
+                    toAge: 13,
+                    male: 30-35,
+                    female: 30-35
+                },
+                {
+                    fromAge: 13,
+                    toAge: 15,
+                    male: 30-35,
+                    female: 30-35
+                },
+                {
+                    fromAge: 15,
+                    toAge: 19,
+                    male: 30,
+                    female: 30
+                },
+                {
+                    fromAge: 19,
+                    toAge: 25,
+                    male: 30,
+                    female: 30
+                },
+                {
+                    fromAge: 25,
+                    toAge: 51,
+                    male: 30,
+                    female: 30
+                },
+                {
+                    fromAge: 51,
+                    toAge: 65,
+                    male: 30,
+                    female: 30
+                },
+                {
+                    fromAge: 65,
+                    toAge: 120,
+                    male: 30,
+                    female: 30
+                },
+            ]
+        }
+    },
 };
 
 
