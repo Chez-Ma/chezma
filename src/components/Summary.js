@@ -34,13 +34,13 @@ function mapStateToProps(state) {
       vitaminD
     },
     reference: {
-      calories: 2500,
-      carbohydrates: 500,
-      fat: 500,
-      protein: 50,
-      calcium: 13,
-      vitaminB12: 10,
-      vitaminD: 4
+      calories: state.dailyConsumptionRecommendation.energy.ranges.range[7].male,
+      carbohydrates: state.dailyConsumptionRecommendation.energy.ranges.range[7].male / 8,
+      fat: state.dailyConsumptionRecommendation.fat.ranges.range[7].male,
+      protein: state.dailyConsumptionRecommendation.protein.ranges.range[7].male * 70,
+      calcium: state.dailyConsumptionRecommendation.calcium.ranges.range[7].male,
+      vitaminB12: state.dailyConsumptionRecommendation.vitaminB12.ranges.range[7].male,
+      vitaminD: state.dailyConsumptionRecommendation.vitaminD.ranges.range[3].male
     }
   }
 }

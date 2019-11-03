@@ -5,6 +5,7 @@ import menus from "./menus";
 import ingredients from "./ingredients";
 import selectedRecipes from "./selectedRecipes";
 import profile from "./profile";
+import dailyConsumptionRecommendation from "./dailyConsumptionRecommendation";
 
 const reducer = combineReducers({
   ingredients,
@@ -12,7 +13,8 @@ const reducer = combineReducers({
   recipes,
   recipeGroups,
   selectedRecipes,
-  profile
+  profile,
+  dailyConsumptionRecommendation
 });
 
 export default reducer;
