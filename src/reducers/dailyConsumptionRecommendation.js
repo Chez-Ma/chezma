@@ -67,7 +67,7 @@ const dailyConsumptionRecommendation = {
             ]
         }
     },
-energy: {
+    protein: {
         id: "protein",
         name: "Eiweiss",
         ranges : {
@@ -135,7 +135,7 @@ energy: {
             ]
         }
     },
-vitamind: {
+    vitaminD: {
         id: "vitamind",
         name: "Vitamin D",
         ranges : {
@@ -168,14 +168,12 @@ vitamind: {
             ]
         }
     },
-fat: {
+    fat: {
         id: "fat",
         name: "Fett",
         ranges : {
             range : [
-           
-             
-{
+                {
                     fromAge: 1,
                     toAge: 4,
                     male: 30-40,
@@ -238,7 +236,7 @@ fat: {
             ]
         }
     },
-vitaminB12: {
+    vitaminB12: {
         id: "vitaminb12",
         name: "Vitamin B12",
         ranges : {
@@ -308,7 +306,7 @@ vitaminB12: {
             ]
         }
     },
-Calcium: {
+    calcium: {
         id: "Calcium",
         name: "Calcium",
         ranges : {
