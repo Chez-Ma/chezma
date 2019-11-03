@@ -23,77 +23,77 @@ class NutritionalValue extends Component {
 
     render() {
 
+        function HasNoNutritionalValues(ingredient) {
+            return  ingredient === undefined
+            || ingredient === null
+                || ingredient.nutritionalValues === undefined
+                || ingredient.nutritionalValues === null;
+        };
+
         function GetCalories(total, ingredient) {
-            if (ingredient === undefined || ingredient === null
-                || ingredient.nutritionalValues === undefined || ingredient.nutritionalValues === null
+            if (HasNoNutritionalValues(ingredient)
                 || ingredient.nutritionalValues.calories === undefined || ingredient.nutritionalValues.calories === null) {
-                return;
+                return 0;
             }
             total += ingredient.nutritionalValues.calories;
             return total;
-        }
+        };
 
         // I know this is a lot of copy paste, but it is basel hack, so ...
 
         function GetCarbohydrates(total, ingredient) {
-            if (ingredient === undefined || ingredient === null
-                || ingredient.nutritionalValues === undefined || ingredient.nutritionalValues === null
+            if (HasNoNutritionalValues(ingredient)
                 || ingredient.nutritionalValues.carbohydrates === undefined || ingredient.nutritionalValues.carbohydrates === null) {
-                return;
+                return 0;
             }
             total += ingredient.nutritionalValues.carbohydrates;
             return total;
-        }
+        };
 
         function GetFat(total, ingredient) {
-            if (ingredient === undefined || ingredient === null
-                || ingredient.nutritionalValues === undefined || ingredient.nutritionalValues === null
+            if (HasNoNutritionalValues(ingredient)
                 || ingredient.nutritionalValues.fat === undefined || ingredient.nutritionalValues.fat === null) {
-                return;
+                return 0;
             }
             total += ingredient.nutritionalValues.fat;
             return total;
-        }
+        };
 
         function GetProtein(total, ingredient) {
-            if (ingredient === undefined || ingredient === null
-                || ingredient.nutritionalValues === undefined || ingredient.nutritionalValues === null
+            if (HasNoNutritionalValues(ingredient)
                 || ingredient.nutritionalValues.protein === undefined || ingredient.nutritionalValues.protein === null) {
-                return;
+                return 0;
             }
             total += ingredient.nutritionalValues.protein;
             return total;
-        }
+        };
 
         function GetCalcium(total, ingredient) {
-            if (ingredient === undefined || ingredient === null
-                || ingredient.nutritionalValues === undefined || ingredient.nutritionalValues === null
+            if (HasNoNutritionalValues(ingredient)
                 || ingredient.nutritionalValues.calcium === undefined || ingredient.nutritionalValues.calcium === null) {
-                return;
+                return 0;
             }
             total += ingredient.nutritionalValues.calcium;
             return total;
-        }
+        };
 
         function GetVitaminB12(total, ingredient) {
-            if (ingredient === undefined || ingredient === null
-                || ingredient.nutritionalValues === undefined || ingredient.nutritionalValues === null
+            if (HasNoNutritionalValues(ingredient)
                 || ingredient.nutritionalValues.vitaminB12 === undefined || ingredient.nutritionalValues.vitaminB12 === null) {
-                return;
+                return 0;
             }
             total += ingredient.nutritionalValues.vitaminB12;
             return total;
-        }
+        };
 
         function GetVitaminD(total, ingredient) {
-            if (ingredient === undefined || ingredient === null
-                || ingredient.nutritionalValues === undefined || ingredient.nutritionalValues === null
+            if (HasNoNutritionalValues(ingredient)
                 || ingredient.nutritionalValues.vitaminD === undefined || ingredient.nutritionalValues.vitaminD === null) {
-                return;
+                return 0;
             }
             total += ingredient.nutritionalValues.vitaminD;
             return total;
-        }
+        };
 
         return (
             <div>

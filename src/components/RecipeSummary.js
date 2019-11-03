@@ -12,6 +12,7 @@ import './RecipeSummary.css'
 import connect from "react-redux/es/connect/connect";
 import Box from "@material-ui/core/Box";
 import NutritionalValue from "./NutritionalValue";
+import EaternityRating from "./EaternityRating";
 
 
 function mapStateToProps(state) {
@@ -63,6 +64,7 @@ class RecipeSummary extends Component {
                     <Collapse in={this.state[recipe.name]} timeout="auto" unmountOnExit>
                         <CardContent>
                                 <NutritionalValue {...recipe}/>
+                                <EaternityRating  {...recipe}/>
                         </CardContent>
                     </Collapse>
                 </Card>

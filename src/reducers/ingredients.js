@@ -11,6 +11,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -25,6 +31,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -39,6 +51,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -53,6 +71,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -67,6 +91,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -81,6 +111,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -95,6 +131,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -109,6 +151,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -123,6 +171,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -137,6 +191,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -151,6 +211,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     },
     {
@@ -165,6 +231,12 @@ const ingredients = [
             calcium: 5.4,
             vitaminB12: 1.4,
             vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
         }
     }
 ];
