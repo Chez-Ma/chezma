@@ -23,7 +23,7 @@ const exampleMenue = {
   }
   ,
   4: {
-    name: "Rind in Sosse",
+    name: "Rind in Sauce",
     value: "menue3",
     img: "/images/GulaschSeiteGlas.jpg",
     imgAlt: "",
@@ -34,6 +34,14 @@ const exampleMenue = {
     name: "Fleisch Menu",
     value: "menue2",
     img: "/images/menuKlassischesFleisch3.jpg",
+    imgAlt: "",
+    recipes: [2,3]
+  }
+  ,
+  6: {
+    name: "Einfach nur Brokkoli",
+    value: "menue2",
+    img: "/images/Brokkoli.jpg",
     imgAlt: "",
     recipes: [2,3]
   }
