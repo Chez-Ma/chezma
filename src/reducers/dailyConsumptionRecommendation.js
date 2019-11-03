@@ -308,6 +308,76 @@ vitaminB12: {
             ]
         }
     },
+Calcium: {
+        id: "Calcium",
+        name: "Calcium",
+        ranges : {
+            range : [
+           
+             
+{
+                    fromAge: 1,
+                    toAge: 4,
+                    male: 600,
+                    female: 600
+                },
+                {
+                    fromAge: 4,
+                    toAge: 7,
+                    male: 750,
+                    female: 750
+                },
+                {
+                    fromAge: 7,
+                    toAge: 10,
+                    male: 900,
+                    female: 900
+                },
+                {
+                    fromAge: 10,
+                    toAge: 13,
+                    male: 1100,
+                    female: 1100
+                },
+                {
+                    fromAge: 13,
+                    toAge: 15,
+                    male: 1200,
+                    female: 1200
+                },
+                {
+                    fromAge: 15,
+                    toAge: 19,
+                    male: 1200,
+                    female: 1200
+                },
+                {
+                    fromAge: 19,
+                    toAge: 25,
+                    male: 1000,
+                    female: 1000
+                },
+                {
+                    fromAge: 25,
+                    toAge: 51,
+                    male: 1000,
+                    female: 1000
+                },
+                {
+                    fromAge: 51,
+                    toAge: 65,
+                    male: 1000,
+                    female: 1000
+                },
+                {
+                    fromAge: 65,
+                    toAge: 120,
+                    male: 1000,
+                    female: 1000
+                },
+            ]
+        }
+    },
 };
 
 
