@@ -2,7 +2,7 @@ const recipes = {
     1: {
         id: "goulash",
         name: "Gulasch",
-        img: "/images/Gulasch%201.jpg",
+        img: "/images/GulaschSeiteGlas.jpg",
         icon: "/images/meat_ikon.png",
         imgAlt: "a gulasch",
         ingredients: [
