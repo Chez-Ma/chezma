@@ -15,9 +15,9 @@ const exampleMenue = {
   }
   ,
   3: {
-    name: "Vegetarisch",
+    name: "Auch Rind",
     value: "menue2",
-    img: "/images/menuKlassischesFleisch3.jpg",
+    img: "/images/menuSpaetzliUndGulasch.jpg",
     imgAlt: "",
     recipes: [2,3]
   }
@@ -31,9 +31,9 @@ const exampleMenue = {
   }
   ,
   5: {
-    name: "Vegetarisch",
+    name: "Fleisch Menu",
     value: "menue2",
-    img: "/images/menuSpaetzliUndGulasch.jpg",
+    img: "/images/menuKlassischesFleisch3.jpg",
     imgAlt: "",
     recipes: [2,3]
   }

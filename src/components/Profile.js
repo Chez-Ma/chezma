@@ -173,7 +173,6 @@ class Profile extends Component {
                             />
                         ))}
                     </FormGroup>
-                <br/>
                     <FormControlLabel control={
                                           <Checkbox checked={this.props.profile['anonymous']}
                                                     onChange={this.handleChangeCheckbox('anonymous')}/>}
