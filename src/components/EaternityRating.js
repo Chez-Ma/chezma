@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import connect from "react-redux/es/connect/connect";
 import StarRating from "./StarRating";
 
+
 function mapStateToProps(state, otherProps) {
 
     return {

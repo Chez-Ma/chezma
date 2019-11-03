@@ -49,7 +49,12 @@ class RecipeSummary extends Component {
                         title={recipe.name}
                     />
                     <CardContent>
-                        <img width={150} height={150} src={recipe.img} alt={recipe.imgAlt}/>
+                        <div  style={{display: "inline-block"}}>
+                            <img width={150} height={150} src={recipe.img} alt={recipe.imgAlt}/>
+                        </div>
+                        <div  style={{display: "inline-block", marginLeft: "20px"}}>
+                            <EaternityRating  {...recipe}/>
+                        </div>
                     </CardContent>
                     <CardActions disableSpacing>
                         <IconButton
@@ -62,8 +67,7 @@ class RecipeSummary extends Component {
                     </CardActions>
                     <Collapse in={this.state[recipe.name]} timeout="auto" unmountOnExit>
                         <CardContent>
-                                <NutritionalValue {...recipe}/>
-                                <EaternityRating  {...recipe}/>
+                            <NutritionalValue {...recipe}/>
                         </CardContent>
                     </Collapse>
                 </Card>

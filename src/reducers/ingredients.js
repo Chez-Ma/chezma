@@ -15,7 +15,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -35,7 +35,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -55,7 +55,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -75,7 +75,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -95,7 +95,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -115,7 +115,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -135,7 +135,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -155,7 +155,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -175,7 +175,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -195,7 +195,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -215,7 +215,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -235,7 +235,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 1,
             rainForest: 1
         }
     },
@@ -258,7 +258,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -278,7 +278,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 3,
             rainForest: 1
         }
     },
@@ -298,7 +298,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 1,
             rainForest: 1
         }
     },
@@ -318,7 +318,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -338,7 +338,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     },
@@ -358,7 +358,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 1,
             rainForest: 1
         }
     },
@@ -378,7 +378,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 0,
             rainForest: 1
         }
     },
@@ -402,7 +402,7 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 4,
+            vita: 2,
             rainForest: 1
         }
     }
