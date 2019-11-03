@@ -24,7 +24,6 @@ class EaternityRating extends Component {
 
     render() {
 
-
         function HasNoEaternityRating(ingredient) {
             return  ingredient === undefined
                 || ingredient === null
@@ -33,53 +32,35 @@ class EaternityRating extends Component {
         };
 
 
-        function GetClimate(total, ingredient) {
+        function GetElement(total, ingredient, propertyDelegate) {
             if (HasNoEaternityRating(ingredient)
-                || ingredient.eaternityRating.climate === undefined || ingredient.eaternityRating.climate === null) {
+                || propertyDelegate(ingredient.eaternityRating) === undefined
+                || propertyDelegate(ingredient.eaternityRating) === null) {
                 return 0;
             }
-            total += ingredient.eaternityRating.climate;
+
+            total += propertyDelegate(ingredient.eaternityRating);
             return total;
         };
 
+        function GetRoundedSum(usedIngredients, propertyDelegate) {
+            return (usedIngredients
+                .reduce((s,i) => GetElement(s,i,propertyDelegate), 0)
+        / usedIngredients.length).toFixed(digits);
+        }
 
-        function GetWaterConsumption(total, ingredient) {
-            if (HasNoEaternityRating(ingredient)
-                || ingredient.eaternityRating.waterConsumption === undefined || ingredient.eaternityRating.waterConsumption === null) {
-                return 0;
-            }
-            total += ingredient.eaternityRating.waterConsumption;
-            return total;
-        };
-
-
-        function GetVita(total, ingredient) {
-            if (HasNoEaternityRating(ingredient)
-                || ingredient.eaternityRating.vita === undefined || ingredient.eaternityRating.vita === null) {
-                return 0;
-            }
-            total += ingredient.eaternityRating.vita;
-            return total;
-        };
-
-
-        function GetRainforest(total, ingredient) {
-            if (HasNoEaternityRating(ingredient)
-                || ingredient.eaternityRating.rainForest === undefined || ingredient.eaternityRating.rainForest === null) {
-                return 0;
-            }
-            total += ingredient.eaternityRating.rainForest;
-            return total;
-        };
-
+        let climate = GetRoundedSum(this.props.usedIngredients, i=>i.climate);
+        let waterConsumption = GetRoundedSum(this.props.usedIngredients, i=>i.waterConsumption);
+        let vita = GetRoundedSum(this.props.usedIngredients, i=>i.vita);
+        let rainForest = GetRoundedSum(this.props.usedIngredients, i=>i.rainForest);
 
         return (
             <div>
                 <h4>Eaternity rating</h4>
-                <div>Climate: {(this.props.usedIngredients.reduce(GetClimate, 0) / this.props.usedIngredients.length).toFixed(digits)}</div>
-                <div>Water consumption: {(this.props.usedIngredients.reduce(GetWaterConsumption, 0) / this.props.usedIngredients.length).toFixed(digits)}</div>
-                <div>Vita: {(this.props.usedIngredients.reduce(GetVita, 0) / this.props.usedIngredients.length).toFixed(digits)}</div>
-                <div>Rainforest: {(this.props.usedIngredients.reduce(GetRainforest, 0) / this.props.usedIngredients.length).toFixed(digits)}</div>
+                <div>Climate: {climate}</div>
+                <div>Water consumption: {waterConsumption}</div>
+                <div>Vita: {vita}</div>
+                <div>Rainforest: {rainForest}</div>
             </div>
         );
     }
