@@ -44,46 +44,53 @@ const recipes = {
             {id: 1005, weight: 150},
             {id: 10457, weight: 2}
         ]
-
     },
     4: {
         id: "pouletgeschnetzeltes",
         name: "Poulet Geschnetzeltes",
+        img: "https://cataas.com/cat/6",
         ingredients: []
     },
     5: {
         id: "hackbraten",
         name: "Hackbraten",
+        img: "https://cataas.com/cat/6",
         ingredients: []
     },
     6: {
         id: "schweinerouladen",
         name: "Schweinerouladen",
+        img: "https://cataas.com/cat/6",
         ingredients: []
     },
     7: {
         id: "ratatouille",
         name: "Ratatouille",
+        img: "https://cataas.com/cat/6",
         ingredients: []
     },
     8: {
         id: "bohnen",
         name: "Bohnen",
+        img: "https://cataas.com/cat/6",
         ingredients: []
     },
     9: {
         id: "fenchel",
         name: "Fenchel",
+        img: "https://cataas.com/cat/6",
         ingredients: []
     },
     10: {
         id: "risotto",
         name: "Risotto",
+        img: "https://cataas.com/cat/6",
         ingredients: []
     },
     11: {
         id: "fruehlingskartoffeln",
         name: "Frühlingskartoffeln",
+        img: "https://cataas.com/cat/6",
         ingredients: []
     },
 };
