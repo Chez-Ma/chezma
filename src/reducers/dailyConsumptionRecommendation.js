@@ -238,6 +238,76 @@ fat: {
             ]
         }
     },
+vitaminB12: {
+        id: "vitaminb12",
+        name: "Vitamin B12",
+        ranges : {
+            range : [
+           
+             
+{
+                    fromAge: 1,
+                    toAge: 4,
+                    male: 1.5,
+                    female: 1.5
+                },
+                {
+                    fromAge: 4,
+                    toAge: 7,
+                    male: 2,
+                    female: 2
+                },
+                {
+                    fromAge: 7,
+                    toAge: 10,
+                    male: 2.5,
+                    female: 2.5
+                },
+                {
+                    fromAge: 10,
+                    toAge: 13,
+                    male: 3.5,
+                    female: 3.5
+                },
+                {
+                    fromAge: 13,
+                    toAge: 15,
+                    male: 4.0,
+                    female: 4.0
+                },
+                {
+                    fromAge: 15,
+                    toAge: 19,
+                    male: 4.0,
+                    female: 4.0
+                },
+                {
+                    fromAge: 19,
+                    toAge: 25,
+                    male: 4.0,
+                    female: 4.0
+                },
+                {
+                    fromAge: 25,
+                    toAge: 51,
+                    male: 4.0,
+                    female: 4.0
+                },
+                {
+                    fromAge: 51,
+                    toAge: 65,
+                    male: 4.0,
+                    female: 30
+                },
+                {
+                    fromAge: 65,
+                    toAge: 120,
+                    male: 4.0,
+                    female: 4.0
+                },
+            ]
+        }
+    },
 };
 
 
