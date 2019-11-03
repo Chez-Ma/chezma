@@ -13,8 +13,8 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
-            waterConsumption: 2,
+            climate: 0,
+            waterConsumption: 1,
             vita: 2,
             rainForest: 1
         }
@@ -35,8 +35,8 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            vita: 3,
+            rainForest: 3
         }
     },
     {
@@ -53,10 +53,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
+            climate: 2,
             waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            vita: 3,
+            rainForest: 2
         }
     },
     {
@@ -73,10 +73,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
-            waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            climate: 2,
+            waterConsumption: 1,
+            vita: 3,
+            rainForest: 2
         }
     },
     {
@@ -93,10 +93,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
-            waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            climate: 2,
+            waterConsumption: 3,
+            vita: 3,
+            rainForest: 2
         }
     },
     {
@@ -114,9 +114,9 @@ const ingredients = [
         },
         eaternityRating: {
             climate: 3,
-            waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            waterConsumption: 3,
+            vita: 3,
+            rainForest: 3
         }
     },
     {
@@ -135,8 +135,8 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            vita: 3,
+            rainForest: 2
         }
     },
     {
@@ -153,10 +153,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
-            waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            climate: 2,
+            waterConsumption: 3,
+            vita: 3,
+            rainForest: 2
         }
     },
     {
@@ -173,10 +173,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
-            waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            climate: 2,
+            waterConsumption: 1,
+            vita: 3,
+            rainForest: 2
         }
     },
     {
@@ -194,9 +194,9 @@ const ingredients = [
         },
         eaternityRating: {
             climate: 3,
-            waterConsumption: 2,
+            waterConsumption: 3,
             vita: 2,
-            rainForest: 1
+            rainForest: 3
         }
     },
     {
@@ -213,10 +213,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
-            waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            climate: 2,
+            waterConsumption: 3,
+            vita: 3,
+            rainForest: 2
         }
     },
     {
@@ -233,10 +233,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
+            climate: 2,
             waterConsumption: 2,
-            vita: 1,
-            rainForest: 1
+            vita: 3,
+            rainForest: 3
         }
     },
 
@@ -258,8 +258,8 @@ const ingredients = [
         eaternityRating: {
             climate: 3,
             waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            vita: 3,
+            rainForest: 3
         }
     },
     {
@@ -276,10 +276,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
-            waterConsumption: 2,
+            climate: 2,
+            waterConsumption: 3,
             vita: 3,
-            rainForest: 1
+            rainForest: 2
         }
     },
     {
@@ -297,9 +297,9 @@ const ingredients = [
         },
         eaternityRating: {
             climate: 3,
-            waterConsumption: 2,
-            vita: 1,
-            rainForest: 1
+            waterConsumption: 3,
+            vita: 3,
+            rainForest: 3
         }
     },
     {
@@ -317,9 +317,9 @@ const ingredients = [
         },
         eaternityRating: {
             climate: 3,
-            waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            waterConsumption: 3,
+            vita: 3,
+            rainForest: 3
         }
     },
     {
@@ -336,10 +336,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
+            climate: 2,
             waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            vita: 3,
+            rainForest: 3
         }
     },
     {
@@ -357,9 +357,9 @@ const ingredients = [
         },
         eaternityRating: {
             climate: 3,
-            waterConsumption: 2,
-            vita: 1,
-            rainForest: 1
+            waterConsumption: 3,
+            vita: 3,
+            rainForest: 3
         }
     },
     {
@@ -376,10 +376,10 @@ const ingredients = [
             vitaminD: 2.32
         },
         eaternityRating: {
-            climate: 3,
+            climate: 2,
             waterConsumption: 2,
-            vita: 0,
-            rainForest: 1
+            vita: 2,
+            rainForest: 2
         }
     },
 
@@ -401,9 +401,9 @@ const ingredients = [
         },
         eaternityRating: {
             climate: 3,
-            waterConsumption: 2,
-            vita: 2,
-            rainForest: 1
+            waterConsumption: 3,
+            vita: 3,
+            rainForest: 3
         }
     }
 
