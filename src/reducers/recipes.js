@@ -23,6 +23,7 @@ const recipes = {
     2: {
         id: "spaetzle",
         name: "Spätzli",
+        icon: "/images/wheat_ikon.png",
         ingredients: [
             {id: 734, weight: 104},
             {id: 423, weight: 26},
