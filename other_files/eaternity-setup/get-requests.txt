@@ -1,0 +1,7 @@
+// get supply
+https://test.eaternity.ch/api/kitchens/ChezMa/supplies/ChezMaSupply?indicators=true
+
+// get recipe 
+https://test.eaternity.ch/api/kitchens/ChezMa/recipes/Rindsgulasch?indicators=true
+
+

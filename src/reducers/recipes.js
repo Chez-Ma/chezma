@@ -14,8 +14,9 @@ const recipes =  {
       {id: 591, weight: 4.5},
       {id: 1693, weight: 3},
       {id: 663, weight: 2},
-      {id: 10457, weight: 4},
-      {id: -1, weight: 2}
+      {id: 664, weight: 3},
+      {id: 9991, weight: 4},
+      {id: 9992, weight: 2}
     ]
   },
   2: {

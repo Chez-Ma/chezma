@@ -5,27 +5,8 @@
         "supplier-id": "ChezMaSupplyId",
         "supply-date": "2019-11-02",
         "ingredients": [
-        {
-            "id": "1027",
-            "type": "conceptual-ingredients",
-            "names":  [
-                {
-                    "language": "de",
-                    "value": "Tomaten"
-                }],
-            "amount": 150,
-            "unit": "gram",
-            "price": 0.5,
-            "currency": "CHF",
-            "origin": "spain",
-            "transport": "air",
-            "production": "greenhouse",
-            "processing": "raw",
-            "conservation": "fresh",
-            "packaging": "plastic"
-        },
-                 {
-            "id": "6",
+		 {
+            "id": "1076",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -71,7 +52,7 @@
             "packaging": "plastic"
         }, 
 		{
-            "id": "359",
+            "id": "1017",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -88,9 +69,28 @@
             "processing": "raw",
             "conservation": "fresh",
             "packaging": "plastic"
+        },
+        {
+            "id": "1027",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Tomaten"
+                }],
+            "amount": 25,
+            "unit": "gram",
+            "price": 0.5,
+            "currency": "CHF",
+            "origin": "spain",
+            "transport": "air",
+            "production": "greenhouse",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic"
         }, 
         {
-            "id": "358",
+            "id": "1015",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -113,7 +113,7 @@
             "packaging": "plastic"
         }, 
         {
-            "id": "1672",
+            "id": "668",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -228,7 +228,7 @@
             "packaging": "plastic"
         },
         {
-            "id": "100100193",
+            "id": "9991",
             "type": "conceptual-ingredients",
             "names":  [
                 {
@@ -251,7 +251,7 @@
             "packaging": "plastic"
         }, 
         {
-            "id": "463",
+            "id": "9992",
             "type": "conceptual-ingredients",
             "names":  [
                 {

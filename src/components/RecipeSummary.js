@@ -62,7 +62,7 @@ class RecipeSummary extends Component {
                     </CardActions>
                     <Collapse in={this.state[recipe.name]} timeout="auto" unmountOnExit>
                         <CardContent>
-                                <NutritionalValue />
+                                <NutritionalValue {...recipe}/>
                         </CardContent>
                     </Collapse>
                 </Card>
