@@ -1,0 +1,118 @@
+
+https://eaternity.docs.apiary.io/#
+Username für test ist ein Key, password ist leer: https://eaternity.docs.apiary.io/#introduction/technical-specifications/authentication
+Die Eaternity API erlaubt das Anlegen von 'kitchen', also z.B. 'Chez Mà'.
+Eine Küche hat Supplies mit Ingredients.
+Rezepte bestehen aus Ingredients.
+Beim Hinzufügen von Supplies und Rezepten sehen die Ingredients gleich auch,
+es ist aber nicht klar, welche Menge damit gemeint ist.
+Nach meinem Verständnis sollte bei 'supply' keine Menge sein, oder die Menge sollte
+dort die Menge für eine 'Bestellung' oder Packetgrösse sein, beim Rezept hingegen
+sollte es die Menge für das Rezept sein. Das ist nicht klar.
+Das Anlegen von supplies mit ingredients ist zwar erfolgreich, aber wenn man dann
+ein Rezepte damit anlegen will, erhält man die Fehlermeldung '"Linking Product with id \"FoodService1027\" is not yet matched. Retry next day."'.
+Ingredients haben eine ID und einen Anzeigenamen für mehrere Sprachen.
+
+{   "supply": {
+        "id": "d1ed2263",
+        "kitchen-id": "293833",
+        "co2-value": 77,
+        "info-text": "Two ingredient origins have been estimated.",
+        "supplier": "Vegetable Supplies Ltd.",
+        "supplier-id": "el3i5y-2in5y-2hbllll01",
+        "supply-date": "2013-06-01",
+        "ingredients": [
+        {
+            "id": "100100191",
+            "type": "conceptual-ingredients",
+            "names":  [
+                {
+                    "language": "de",
+                    "value": "Tomaten"
+                }],
+            "amount": 150.0,
+            "unit": "gram",
+            "origin": "spain",
+            "transport": "air",
+            "production": "greenhouse",
+            "processing": "raw",
+            "conservation": "fresh",
+            "packaging": "plastic",
+            "gtin":"",
+            "rating": "c",
+            "bar-chart": 69,
+            "co2-value": 79,
+            "indicators": {
+                "vita-score": {
+                    "vita-score-points": "TBI",
+                    "vita-score-rating": "TBI",
+                    "energy-kcals": 457.0,
+                    "nutrition-label": false,
+                    "nutrition-rating": "TBI"
+                },
+                "environment": {
+                    "animal-treatment-label": true,
+                    "animal-treatment-rating": "A",
+                    "rainforest-label": false,
+                    "rainforest-rating": "E",
+                    "local-label": true,
+                    "local-rating": "TBI",
+                    "season-label": true,
+                    "season-rating": "TBI",
+                    "scarce-water-liters": 6.0,
+                    "water-footprint-rating": "B",
+                    "water-footprint-award": true
+                }
+            }
+        }
+        ]
+}
+
+
+
+=========
+
+
+
+
+https://www.nutritics.com/p/api
+https://www.nutritics.com/api/v1.1/explorer/
+
+Zugang erfolgt über 30-tägigen Testzugang.
+Die nutritics API kann mit Postman nicht aufgerufen werden, vermutlich liegt das am
+sehr ungünstig gewählen Benutzernamen 'Chez Mà'. Bitte NIE Abstände oder Umlaute
+in Benutzernamen und Passwörtern verwenden!
+Diese API basiert auf einer Datenbank, welche man im Benutzerprofil auswählen kann,
+sie enthält nicht nur unprozessierte Produkte wie Tomaten (roh, cherry, ...),
+sondern auch Fertigprodukte wie Smoothies aus dem Detailhandel.
+Sie haben eine IFC zusammengesetzt aus 'source' und 'code', die ist aber nicht vergleichbar, es ist nicht klar, ob die ID
+der IngredientID von der verwendeten Nahrungsmitteldatenbank kommt.
+
+    "1": {
+        "id": 65406,
+        "ifc": "GB15.13-517",
+        "userID": 0,
+        "src": "GB15",
+        "code": "13-517",
+        "name": "Tomatoes, standard, raw",
+        "moddate": "2019-07-03 11:47:05",
+        "cat": "Vegetables-General",
+        "isLive": true,
+        "barcode": "",
+        "reporturl": "https://www.nutritics.com/foo/23975119143579970",
+        "photo": "https://www.nutritics.com/images-user/food/0/240x240x3280.jpg"
+    },
+
+
+
+
+
+Probleme:
+
+- Verknüpfung von Ingredients zwischen Chez Mà-Datenbank, Eaternity und Nutricity muss vermutlich
+mit einer eigenen Verknüpfungstabelle gemacht werden. Das wäre dann ein wichtiger Kern
+des Geschäftsmodells von Chez Mà - die Verknüpfung.
+- Anlegen von Rezepten in Eaternity ist möglich. Es ist vermutlich notwendig, den man kann ingredients
+nicht selber abfragen. Also entweder lädt man alle Ingredients über den Supplier und sucht sich dann
+die passenden heraus, oder man legt ein Rezept an und ruft dann die Ingredients über das Rezept ab.
+
