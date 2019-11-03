@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import CenteredLayout from "./CenteredLayout";
+import {Link} from "react-router-dom";
 
 const mail = 'test';
 const password = 'password';
@@ -33,7 +34,7 @@ class Register extends Component {
                         />
                     </div>
                     <div>
-                        <Button variant='contained' color='primary'>
+                        <Button variant='contained' color='primary'  component={Link} to="/home">
                             Register
                         </Button>
                     </div>
