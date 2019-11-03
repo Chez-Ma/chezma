@@ -135,6 +135,39 @@ energy: {
             ]
         }
     },
+vitamind: {
+        id: "vitamind",
+        name: "Vitamin D",
+        ranges : {
+            range : [
+                {
+                    fromAge: 0,
+                    toAge: 1,
+                    male: 10,
+                    female: 10
+                },
+                {
+                    fromAge: 1,
+                    toAge: 15,
+                    male: 20,
+                    female: 20
+                },
+                {
+                    fromAge: 15,
+                    toAge: 65,
+                    male: 20,
+                    female: 20
+                },
+                {
+                    fromAge: 65,
+                    toAge: 120,
+                    male: 20,
+                    female: 20
+                },
+                
+            ]
+        }
+    },
 };
 
 
