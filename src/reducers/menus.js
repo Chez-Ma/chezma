@@ -1,6 +1,6 @@
 const exampleMenue = {
   1 : {
-    name: "Rindfleisch Menü",
+    name: "Rindfleisch-Menü",
     value: "menue1",
     img: "/images/Menü%203.jpg",
     imgAlt: "",

@@ -8,7 +8,6 @@ function mapStateToProps(state, otherProps) {
             return state.ingredients.find(function(element) {
                 return ingredient.id === element.id;
             });
-            return null;
         })
     };
 }
@@ -17,10 +16,6 @@ const digits = 2;
 
 
 class EaternityRating extends Component {
-
-    constructor(props) {
-        super(props);
-    }
 
     render() {
 

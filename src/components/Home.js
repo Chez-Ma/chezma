@@ -25,7 +25,7 @@ function mapStateToProps(state) {
 class Home extends Component {
   render() {
     const recipeLists = this.props.recipeGroups.map((group) => (
-      <Box mb={2}>
+      <Box key={group.name} mb={2}>
         <RecipeList recipeList={group} />
       </Box>
     ));

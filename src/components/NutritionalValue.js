@@ -8,7 +8,6 @@ function mapStateToProps(state, otherProps) {
             return state.ingredients.find(function(element) {
                 return ingredient.id === element.id;
             });
-            return null;
         })
     };
 }
