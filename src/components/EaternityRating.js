@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import connect from "react-redux/es/connect/connect";
+import StarRating from "./StarRating";
 
 function mapStateToProps(state, otherProps) {
 
@@ -45,17 +46,17 @@ class EaternityRating extends Component {
         }
 
         let climate = GetRoundedSum(this.props.usedIngredients, i=>i.climate);
-        let waterConsumption = GetRoundedSum(this.props.usedIngredients, i=>i.waterConsumption);
+        const waterConsumption = {rating: GetRoundedSum(this.props.usedIngredients, i=>i.waterConsumption)};
         let vita = GetRoundedSum(this.props.usedIngredients, i=>i.vita);
         let rainForest = GetRoundedSum(this.props.usedIngredients, i=>i.rainForest);
 
         return (
             <div>
                 <h4>Eaternity rating</h4>
-                <div>Climate: {climate}</div>
-                <div>Water consumption: {waterConsumption}</div>
-                <div>Vita: {vita}</div>
-                <div>Rainforest: {rainForest}</div>
+                <div>Climate: <StarRating {...{rating: climate}} /></div>
+                <div>Water consumption: <StarRating {...{rating: waterConsumption}}/></div>
+                <div>Vita: <StarRating {...{rating: vita}}/></div>
+                <div>Rainforest: <StarRating {...{rating: rainForest}}/></div>
             </div>
         );
     }
