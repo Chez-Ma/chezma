@@ -18,7 +18,7 @@ function mapStateToProps(state) {
   return {
     recipes: state.selectedRecipes.map((id) => {
       return state.recipes[id];
-    })
+    }).sort((a, b) => (a.name > b.name) ? 1 : -1)
   };
 }
 

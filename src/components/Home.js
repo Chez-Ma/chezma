@@ -8,6 +8,9 @@ import RecipeSummary from "./RecipeSummary";
 import Button from "@material-ui/core/Button";
 import {Link} from "react-router-dom";
 import {clearSelectedRecipes} from "../actions/selectRecipe";
+import SummaryChart from "./SummaryChart";
+import {Switch, Route} from "react-router-dom";
+import Summary from "./Summary";
 
 function mapStateToProps(state) {
   return {
@@ -43,13 +46,22 @@ class Home extends Component {
         <Grid item xs={6}>
           <Box m={2}>
             {
-              this.props.selectedRecipes.length === 0 ?
-                <MenueSelection/> :
-                <div>
-                  <RecipeSummary/>
-                  <Button variant="contained" component={Link} to="/profile">Profile</Button>
-                  <Button variant="contained" style={{marginLeft: "1rem"}} component={Link} to="/order">Order</Button>
-                </div>
+              <Switch>
+                <Route path="/summary/">
+                  <Summary/>
+                </Route>
+                <Route>
+                  {this.props.selectedRecipes.length === 0 ?
+                    <MenueSelection/> :
+                    <div>
+                      <RecipeSummary/>
+                      <Button variant="contained" component={Link} to="/profile">Profile</Button>
+                      <Button variant="contained" style={{marginLeft: "1rem"}} component={Link}
+                              to="/summary">Summary</Button>
+                    </div>
+                  }
+                </Route>
+              </Switch>
             }
           </Box>
         </Grid>

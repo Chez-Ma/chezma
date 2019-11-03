@@ -14,7 +14,7 @@ function App() {
       <Fragment>
         <Background>
     <Router>
-      <div className="App">
+      <div className="App" style={{overflowX: "hidden", height: "100%"}}>
         <Header/>
           <Switch>
             <Route path="/login">
