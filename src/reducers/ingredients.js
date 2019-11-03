@@ -238,7 +238,151 @@ const ingredients = [
             vita: 4,
             rainForest: 1
         }
+    },
+
+
+
+    {
+        name: "Spätzli-Mehl",
+        value: "whiteFlour",
+        id: 734,
+        nutritionalValues: {
+            calories: 731.35,
+            carbohydrates: 12.23,
+            fat: 7.7,
+            protein: 7.7,
+            calcium: 5.4,
+            vitaminB12: 1.4,
+            vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
+        }
+    },
+    {
+        name: "Hartweizengriess",
+        value: "semolina",
+        id: 423,
+        nutritionalValues: {
+            calories: 731.35,
+            carbohydrates: 12.23,
+            fat: 7.7,
+            protein: 7.7,
+            calcium: 5.4,
+            vitaminB12: 1.4,
+            vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
+        }
+    },
+    {
+        name: "Eier",
+        value: "eggs",
+        id: 290,
+        nutritionalValues: {
+            calories: 731.35,
+            carbohydrates: 12.23,
+            fat: 7.7,
+            protein: 7.7,
+            calcium: 5.4,
+            vitaminB12: 1.4,
+            vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
+        }
+    },
+    {
+        name: "Wasser",
+        value: "water",
+        id: 121222,
+        nutritionalValues: {
+            calories: 731.35,
+            carbohydrates: 12.23,
+            fat: 7.7,
+            protein: 7.7,
+            calcium: 5.4,
+            vitaminB12: 1.4,
+            vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
+        }
+    },
+    {
+        name: "Milch",
+        value: "milk",
+        id: 62,
+        nutritionalValues: {
+            calories: 731.35,
+            carbohydrates: 12.23,
+            fat: 7.7,
+            protein: 7.7,
+            calcium: 5.4,
+            vitaminB12: 1.4,
+            vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
+        }
+    },
+    {
+        name: "Salz",
+        value: "salz",
+        id: 10457,
+        nutritionalValues: {
+            calories: 731.35,
+            carbohydrates: 12.23,
+            fat: 7.7,
+            protein: 7.7,
+            calcium: 5.4,
+            vitaminB12: 1.4,
+            vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
+        }
+    },
+    {
+        name: "Muskat",
+        value: "nutmeg",
+        id: 888989,
+        nutritionalValues: {
+            calories: 731.35,
+            carbohydrates: 12.23,
+            fat: 7.7,
+            protein: 7.7,
+            calcium: 5.4,
+            vitaminB12: 1.4,
+            vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
+        }
     }
+
 ];
 
 export default function (state = ingredients, action) {
