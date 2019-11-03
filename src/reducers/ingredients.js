@@ -381,6 +381,30 @@ const ingredients = [
             vita: 4,
             rainForest: 1
         }
+    },
+
+
+
+
+    {
+        name: "Brokkoli, gedämpft",
+        value: "broccoli",
+        id: 1005,
+        nutritionalValues: {
+            calories: 731.35,
+            carbohydrates: 12.23,
+            fat: 7.7,
+            protein: 7.7,
+            calcium: 5.4,
+            vitaminB12: 1.4,
+            vitaminD: 2.32
+        },
+        eaternityRating: {
+            climate: 3,
+            waterConsumption: 2,
+            vita: 4,
+            rainForest: 1
+        }
     }
 
 ];
