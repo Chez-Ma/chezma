@@ -53,6 +53,7 @@ function mapStateToProps(state) {
 }
 
 class Profile extends Component {
+
     handleChangedGender = event => {
         this.props.dispatch(setProfileState('gender', event.target.value));
     };
@@ -73,6 +74,10 @@ class Profile extends Component {
         this.props.dispatch(setProfileState(name, !this.props.profile[name]));
     };
 
+    getType = anonym => {
+        return anonym ? 'password' : 'text';
+    };
+
     render() {
         return (
             <CenteredLayout>
@@ -90,6 +95,7 @@ class Profile extends Component {
                         InputProps={{
                             startAdornment: <InputAdornment position="start">Years</InputAdornment>,
                         }}
+                        type={this.getType(this.props.profile['anonymous'])}
                         margin="normal"
                         variant="outlined"
                     />
@@ -124,6 +130,7 @@ class Profile extends Component {
                         InputProps={{
                             startAdornment: <InputAdornment position="start">cm</InputAdornment>,
                         }}
+                        type={this.getType(this.props.profile['anonymous'])}
                         margin="normal"
                         variant="outlined"
                     />
@@ -138,6 +145,7 @@ class Profile extends Component {
                         InputProps={{
                             startAdornment: <InputAdornment position="start">kg</InputAdornment>,
                         }}
+                        type={this.getType(this.props.profile['anonymous'])}
                         margin="normal"
                         variant="outlined"
                     />
@@ -165,6 +173,12 @@ class Profile extends Component {
                             />
                         ))}
                     </FormGroup>
+                <br/>
+                    <FormControlLabel control={
+                                          <Checkbox checked={this.props.profile['anonymous']}
+                                                    onChange={this.handleChangeCheckbox('anonymous')}/>}
+                                      label={"Anonymous"}
+                    />
 
                     <FormHelperText id="my-helper-text">We'll never share your personal information</FormHelperText>
                 </FormControl>
