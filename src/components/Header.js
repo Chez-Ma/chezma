@@ -18,7 +18,7 @@ class Header extends Component {
               <MenuIcon/>
             </IconButton>
             <Typography className="header-title" variant="h6">
-              Chez Mà
+              <img src={"/images/ChezMaLogo_White.png"} width={"100px"} height={"30px"} style={{"margin-top": "12px"}}/>
             </Typography>
             <Button color="inherit" component={Link} to="/login">Login</Button>
             <Button color="inherit" component={Link} to="/register">Register</Button>
