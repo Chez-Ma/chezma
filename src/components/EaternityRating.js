@@ -53,11 +53,27 @@ class EaternityRating extends Component {
 
         return (
             <div>
-                <h4>Eaternity rating</h4>
-                <div>CO2-foodprint: <StarRating {...{rating: climate}} /></div>
-                <div>Water consumption: <StarRating {...{rating: waterConsumption}}/></div>
-                <div>Animal welfare: <StarRating {...{rating: vita}}/></div>
-                <div>Rainforest protected: <StarRating {...{rating: rainForest}}/></div>
+                <h4 style={ {display:"default"}}>Eaternity rating</h4>
+                <table style={ {display:"inline-block"}}>
+                    <tbody>
+                    <tr>
+                        <td>CO2-foodprint:</td>
+                        <td><StarRating {...{rating: climate}} /></td>
+                    </tr>
+                    <tr>
+                        <td>Water consumption: </td>
+                        <td><StarRating {...{rating: waterConsumption}}/></td>
+                    </tr>
+                    <tr>
+                        <td>Animal welfare:</td>
+                        <td><StarRating {...{rating: vita}}/></td>
+                    </tr>
+                    <tr>
+                        <td>Rainforest protected:</td>
+                        <td><StarRating {...{rating: rainForest}}/></td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }
