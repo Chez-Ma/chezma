@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -7,9 +7,12 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import RecipeSummary from "./components/RecipeSummary";
 import MenueSelection from "./components/MenueSelection";
+import Background from "./components/Background";
 
 function App() {
   return (
+      <Fragment>
+        <Background>
     <Router>
       <div className="App">
         <Header/>
@@ -35,6 +38,8 @@ function App() {
           </Switch>
       </div>
     </Router>
+        </Background>
+      </Fragment>
   );
 }
 

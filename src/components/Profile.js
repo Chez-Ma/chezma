@@ -4,7 +4,6 @@ import TextField from "@material-ui/core/TextField";
 import './Profile.css'
 import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
-import InputLabel from "@material-ui/core/InputLabel";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
@@ -13,7 +12,6 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import CenteredLayout from "./CenteredLayout";
 import {setProfileState} from "../actions/profile";
 import Typography from "@material-ui/core/Typography";
-import Toolbar from "@material-ui/core/Toolbar";
 
 const genders = [
     {
