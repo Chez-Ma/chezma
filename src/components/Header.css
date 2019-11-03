@@ -5,3 +5,16 @@
 .header-title {
     flex-grow: 1;
 }
+
+.MuiAppBar-colorPrimary {
+    /*color: #229911!important;*/
+    background-color: #3a5724!important;
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+    color: #e15500!important;
+}
+.MuiCheckbox-colorSecondary.Mui-checked:hover {
+    background-color: #a15500!important;
+    opacity: 0.7;
+}
