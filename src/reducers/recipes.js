@@ -45,7 +45,47 @@ const recipes = {
             {id: 10457, weight: 2}
         ]
 
-    }
+    },
+    4: {
+        id: "pouletgeschnetzeltes",
+        name: "Poulet Geschnetzeltes",
+        ingredients: []
+    },
+    5: {
+        id: "hackbraten",
+        name: "Hackbraten",
+        ingredients: []
+    },
+    6: {
+        id: "schweinerouladen",
+        name: "Schweinerouladen",
+        ingredients: []
+    },
+    7: {
+        id: "ratatouille",
+        name: "Ratatouille",
+        ingredients: []
+    },
+    8: {
+        id: "bohnen",
+        name: "Bohnen",
+        ingredients: []
+    },
+    9: {
+        id: "fenchel",
+        name: "Fenchel",
+        ingredients: []
+    },
+    10: {
+        id: "risotto",
+        name: "Risotto",
+        ingredients: []
+    },
+    11: {
+        id: "fruehlingskartoffeln",
+        name: "Frühlingskartoffeln",
+        ingredients: []
+    },
 };
 
 
