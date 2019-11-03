@@ -4,6 +4,8 @@
 
 .header-title {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .MuiAppBar-colorPrimary {
