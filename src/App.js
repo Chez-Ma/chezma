@@ -7,12 +7,9 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import RecipeSummary from "./components/RecipeSummary";
 import MenueSelection from "./components/MenueSelection";
-import Background from "./components/Background";
 
 function App() {
   return (
-      <Fragment>
-        <Background>
     <Router>
       <div className="App" style={{overflowX: "hidden", height: "100%"}}>
         <Header/>
@@ -38,8 +35,6 @@ function App() {
           </Switch>
       </div>
     </Router>
-        </Background>
-      </Fragment>
   );
 }
 
