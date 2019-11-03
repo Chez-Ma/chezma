@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import RecipeSummary from "./components/RecipeSummary";
 import MenueSelection from "./components/MenueSelection";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
@@ -29,8 +30,11 @@ function App() {
             <Route path="/profile">
               <Profile/>
             </Route>
-            <Route path="/">
+            <Route path="/home">
               <Home/>
+            </Route>
+            <Route path="/">
+              <LandingPage/>
             </Route>
           </Switch>
       </div>
