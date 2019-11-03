@@ -57,6 +57,7 @@ class Summary extends Component {
         <SummaryChart name={"Vitamin B12"} value={this.props.menu.vitaminB12} reference={this.props.reference.vitaminB12}/>
         <SummaryChart name={"Vitamin D"} value={this.props.menu.vitaminD} reference={this.props.reference.vitaminD}/>
         <Button variant="contained" style={{marginLeft: "1rem"}} component={Link} to="/home">Back</Button>
+        <Button variant="contained" style={{marginLeft: "1rem"}} component={Link} to="/home">Order</Button>
       </div>
     );
   }

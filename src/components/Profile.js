@@ -12,6 +12,9 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import CenteredLayout from "./CenteredLayout";
 import {setProfileState} from "../actions/profile";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import {Link} from "react-router-dom";
+import Box from "@material-ui/core/Box";
 
 const genders = [
     {
@@ -88,6 +91,7 @@ class Profile extends Component {
                     <TextField
                         id="outlined-number"
                         label="Age"
+                        value={this.props.profile.age}
                         onChange={this.handleChangedAge}
                         InputLabelProps={{
                             shrink: true,
@@ -122,6 +126,7 @@ class Profile extends Component {
                     <TextField
                         id="outlined-number"
                         label="Size"
+                        value={this.props.profile.size}
                         type="number"
                         onChange={this.handleChangedSize}
                         InputLabelProps={{
@@ -137,6 +142,7 @@ class Profile extends Component {
                     <TextField
                         id="outlined-number"
                         label="Weight"
+                        value={this.props.profile.weight}
                         type="number"
                         onChange={this.handleChangedWeight}
                         InputLabelProps={{
@@ -181,6 +187,10 @@ class Profile extends Component {
 
                     <FormHelperText id="my-helper-text">We'll never share your personal information</FormHelperText>
                 </FormControl>
+                <Box mt={2}>
+                    <Button variant="contained" style={{marginLeft: "1rem"}} component={Link} to="/home">Cancel</Button>
+                    <Button variant="contained" style={{marginLeft: "1rem"}} component={Link} to="/home">Save</Button>
+                </Box>
             </CenteredLayout>
         );
     }
