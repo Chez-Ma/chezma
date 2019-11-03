@@ -67,6 +67,74 @@ const dailyConsumptionRecommendation = {
             ]
         }
     },
+energy: {
+        id: "protein",
+        name: "Eiweiss",
+        ranges : {
+            range : [
+                {
+                    fromAge: 1,
+                    toAge: 4,
+                    male: 1.0,
+                    female: 1.0
+                },
+                {
+                    fromAge: 4,
+                    toAge: 7,
+                    male: 0.9,
+                    female: 0.9
+                },
+                {
+                    fromAge: 7,
+                    toAge: 10,
+                    male: 0.9,
+                    female: 0.9
+                },
+                {
+                    fromAge: 10,
+                    toAge: 13,
+                    male: 0.9,
+                    female: 0.9
+                },
+                {
+                    fromAge: 13,
+                    toAge: 15,
+                    male: 0.9,
+                    female: 0.9
+                },
+                {
+                    fromAge: 15,
+                    toAge: 19,
+                    male: 0.9,
+                    female: 0.8
+                },
+                {
+                    fromAge: 19,
+                    toAge: 25,
+                    male: 0.8,
+                    female: 0.8
+                },
+                {
+                    fromAge: 25,
+                    toAge: 51,
+                    male: 0.8,
+                    female: 0.8
+                },
+                {
+                    fromAge: 51,
+                    toAge: 65,
+                    male: 0.8,
+                    female: 0.8
+                },
+                {
+                    fromAge: 65,
+                    toAge: 120,
+                    male: 1.0,
+                    female: 1.0
+                },
+            ]
+        }
+    },
 };
 
 
