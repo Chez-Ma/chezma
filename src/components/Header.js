@@ -22,6 +22,7 @@ class Header extends Component {
             </Typography>
             <Button color="inherit" component={Link} to="/login">Login</Button>
             <Button color="inherit" component={Link} to="/register">Register</Button>
+            <Button color="inherit" component={Link} to="/about">About</Button>
           </Toolbar>
         </AppBar>
       </div>

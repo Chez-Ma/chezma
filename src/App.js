@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import RecipeSummary from "./components/RecipeSummary";
 import MenueSelection from "./components/MenueSelection";
 import LandingPage from "./components/LandingPage";
+import About from "./components/About";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path={["/home", "/summary"]}>
               <Home/>
+            </Route>
+            <Route path={"/about"}>
+              <About/>
             </Route>
             <Route path="/">
               <LandingPage/>
