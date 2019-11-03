@@ -43,18 +43,6 @@ class About extends Component {
                   backgroundImage: `url(${this.state.img})`,
               }}
           />
-                        <span className={classes.imageBackdrop}/>
-                        <span className={classes.imageButton}>
-            <Typography
-                component="span"
-                variant="subtitle1"
-                color="inherit"
-                className={classes.imageTitle}
-            >
-              {this.state.name}
-                <span className={classes.imageMarked}/>
-            </Typography>
-          </span>
                     </ButtonBase>
                     </span>
             </span>
