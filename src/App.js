@@ -30,7 +30,7 @@ function App() {
             <Route path="/profile">
               <Profile/>
             </Route>
-            <Route path="/home">
+            <Route path={["/home", "/summary"]}>
               <Home/>
             </Route>
             <Route path="/">

@@ -3,7 +3,7 @@ const recipeGroups = [{
   recipes: [1],
 },
   {
-  name: "Kohlenhydrate",
+  name: "Beilagen",
   recipes: [2],
 },
   {
