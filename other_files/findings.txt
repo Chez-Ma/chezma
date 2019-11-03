@@ -1,4 +1,10 @@
 
+Nährwertempfehlungen:
+http://www.sge-ssn.ch/grundlagen/lebensmittel-und-naehrstoffe/naehrstoffempfehlungen/dachreferenzwerte/
+Komplex, weil manche Sachen auf Alter gehen, manche auf Gewicht, manche auf Aktivität, usw.
+
+========
+
 https://eaternity.docs.apiary.io/#
 Username für test ist ein Key, password ist leer: https://eaternity.docs.apiary.io/#introduction/technical-specifications/authentication
 Die Eaternity API erlaubt das Anlegen von 'kitchen', also z.B. 'Chez Mà'.
