@@ -57,7 +57,7 @@ class EaternityRating extends Component {
                 <table style={ {display:"inline-block"}}>
                     <tbody>
                     <tr>
-                        <td>CO2-foodprint:</td>
+                        <td>CO<sub>2</sub>-foodprint:</td>
                         <td><StarRating {...{rating: climate}} /></td>
                     </tr>
                     <tr>

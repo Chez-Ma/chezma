@@ -53,13 +53,38 @@ class NutritionalValue extends Component {
         return (
             <div>
                 <h4>Nutritional values</h4>
-                <div>Calories: {calories}</div>
-                <div>Carbohydrates: {carbohydrates}</div>
-                <div>Fat: {fat}</div>
-                <div>Protein: {protein}</div>
-                <div>Calcium: {calcium}</div>
-                <div>Vitamin B12: {vitaminB12}</div>
-                <div>Vitamin D: {vitaminD}</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Calories:</td>
+                            <td>{calories}</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates:</td>
+                            <td>{carbohydrates}</td>
+                        </tr>
+                        <tr>
+                            <td>Fat:</td>
+                            <td>{fat}</td>
+                        </tr>
+                        <tr>
+                            <td>Protein:</td>
+                            <td>{protein}</td>
+                        </tr>
+                        <tr>
+                            <td>Calcium:</td>
+                            <td>{calcium}</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin B12:</td>
+                            <td>{vitaminB12}</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamin D:</td>
+                            <td>{vitaminD}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }
